@@ -104,6 +104,7 @@ body {
 /* line 6, ./src/stylesheets/partials/_default.sass */
 body {
   width: 896px;
+  float: left;
   padding: 72px 48px 84px;
 }
 
@@ -115,6 +116,7 @@ body {
   /* line 7, ./src/stylesheets/partials/_tablet.sass */
   body {
     width: 712px;
+    float: left;
     padding: 48px 28px 60px;
   }
 }
@@ -127,6 +129,7 @@ body {
   /* line 7, ./src/stylesheets/partials/_mobile.sass */
   body {
     width: 252px;
+    float: left;
     padding: 48px 34px 60px;
   }
 }
@@ -139,6 +142,7 @@ body {
   /* line 7, ./src/stylesheets/partials/_wide-mobile.sass */
   body {
     width: 436px;
+    float: left;
     padding: 36px 22px 48px;
   }
 }
@@ -150,4 +154,46 @@ body {
 /* line 12 */
 body {
   background: url(/images/bg.jpg);
+  color: white;
+}
+/* line 15 */
+body section {
+  background: white;
+  color: black;
+  zoom: 1;
+  display: block;
+}
+/* line 42, ./src/stylesheets/less/_framework.scss */
+body section:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* line 19 */
+body section .item {
+  width: 896px;
+  float: left;
+  zoom: 1;
+  display: block;
+}
+/* line 42, ./src/stylesheets/less/_framework.scss */
+body section .item:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* line 22 */
+body section .item p {
+  width: 344px;
+  float: left;
+  margin-right: 24px;
+}
+/* line 25 */
+body section .item img {
+  width: 528px;
+  float: left;
 }

@@ -24,7 +24,7 @@ $less-font-family: Arial, sans-serif !default;
 
 @mixin column($columns, $last: false) {
   width: (68px * $columns) + (24px * ($columns - 1));
-
+  float: left;
   @if $last != true {
     margin-right: 24px;
   }
@@ -37,3 +37,16 @@ $less-font-family: Arial, sans-serif !default;
   img::-moz-selection {background: transparent;}
   body {-webkit-tap-highlight-color: #{$color};}
 }
+
+@mixin clearfix {
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  zoom: 1;
+  display: block;
+}
+
