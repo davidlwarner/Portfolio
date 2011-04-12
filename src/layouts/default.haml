@@ -1,7 +1,11 @@
-!!!
+!!! 5
 %html
   %head
-    %title StaticMatic
+    %meta{ :charset => "utf-8" }
+    %title David L Warner — Designer
+    /[if lt IE 9]
+      %script{ :src => "http://html5shim.googlecode.com/svn/trunk/html5.js" }
     = stylesheets
-  %body
+    %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1" }
+  %body{ :lang => "en" }
     = yield
