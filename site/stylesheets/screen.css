@@ -147,3 +147,7 @@ body {
    Overrides styles for devices with a
    device-pixel-ratio of 2+, such as iPhone 4.  */
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {}
+/* line 12 */
+body {
+  background: url(/images/bg.jpg);
+}
