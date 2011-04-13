@@ -1,0 +1,126 @@
+// Global style definitions
+
+h1 {
+  @extend .huge;
+}
+
+h2 {
+  @extend .large;
+}
+
+h3 {
+  @extend .bigger;
+}
+
+h4 {
+  @extend .big;
+}
+
+small {
+  @extend .small;
+}
+
+
+body {
+  background: rgb(232,232,232);
+  color: rgb(60,60,60);
+
+  // Stops Mobile Safari from auto-adjusting font-sizes
+  -webkit-text-size-adjust: 100%;
+}
+
+
+// Selection colors (easy to forget)
+@include selection-color(unquote("rgb(255,255,158)"));
+
+$light-bg: #ffd;
+$bgcolor: #ffc;
+
+body {
+  background: url(/images/bg.jpg);
+  header {
+    width: 992px;
+    margin: 24px auto;
+    @include clearfix;
+    h1 {
+      color: $light-bg;
+      float: left;
+      letter-spacing: -1px;
+      text-shadow: rgba(0,0,0,0.5)        -1px  0, 
+                   rgba(0,0,0,0.3)        0     -1px, 
+                   rgba(255,255,255,0.5)  0     1px, 
+                   rgba(0,0,0,0.3)        -1px  -2px;
+    }
+    .services {
+      float: right;
+      margin-top: 14px;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  #main {
+    background: $bgcolor;
+    color: black;
+    margin: 0 auto 48px;
+    padding: 0 48px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.25);
+    @include background-clip(padding-box);
+    @include border-radius(7px);
+    @include box-shadow(black, 1px, 1px, 5px, inset);
+    @include linear-gradient(color-stops($light-bg, $bgcolor 10%, $bgcolor 100%));
+    section {
+      @include clearfix;
+      h2 {
+        @extend .big;
+        background: rgba(0,0,0,0.85);
+        color: $light-bg;
+        margin: 0 -48px 0;
+        padding: 12px 48px;
+        @include box-shadow(black, 0, 0, 2px);
+        text-shadow: rgba(0,0,0,0.5)        -1px  0, 
+                     rgba(0,0,0,0.3)        0     -1px, 
+                     rgba(255,255,255,0.5)  0     1px, 
+                     rgba(0,0,0,0.3)        -1px  -2px;
+      }
+      .info {
+        padding-top: 24px;
+        h3 {
+          @extend .normal;
+          margin-bottom: 24px;
+        }
+        p.description {
+          margin-bottom: 24px;
+        }
+        .item {
+          @include column(10, true);
+          @include clearfix;
+          p {
+            @include column(4);
+            float: left;
+          }
+          .thumb {
+            float: left;
+            width: 526px;
+            height: 295px;
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            background: white;
+            @include box-shadow(#ccc, 0, 0, 5px, inset);
+
+            @include display-box;
+            @include box-orient(horizontal);
+            @include box-pack(center);
+            @include box-align(center);
+
+            img {
+              max-width: 506px;
+              max-height: 275px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

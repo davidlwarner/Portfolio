@@ -1,4 +1,4 @@
-/* line 7, ../../src/stylesheets/less/_reset.scss */
+/* line 7, ./src/stylesheets/less/_reset.scss */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em,
 img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr,
@@ -11,90 +11,247 @@ menu, footer, header, nav, section, summary, time, mark, audio, video {
   border: 0;
 }
 
-/* line 14, ../../src/stylesheets/less/_reset.scss */
+/* line 14, ./src/stylesheets/less/_reset.scss */
 article, aside, canvas, figure, figure img, figcaption, hgroup,
 footer, header, nav, section, audio, video {
   display: block;
 }
 
-/* line 18, ../../src/stylesheets/less/_reset.scss */
+/* line 18, ./src/stylesheets/less/_reset.scss */
 a img {
   border: 0;
 }
 
-/* line 1, ../../src/stylesheets/less/_typography.scss */
+/* line 1, ./src/stylesheets/less/_typography.scss */
 .gigantic {
   font-size: 110px;
   line-height: 120px;
   letter-spacing: -2px;
 }
 
-/* line 7, ../../src/stylesheets/less/_typography.scss */
+/* line 7, ./src/stylesheets/less/_typography.scss */
 .huge, h1 {
   font-size: 68px;
   line-height: 72px;
   letter-spacing: -1px;
 }
 
-/* line 13, ../../src/stylesheets/less/_typography.scss */
+/* line 13, ./src/stylesheets/less/_typography.scss */
 .large, h2 {
   font-size: 42px;
   line-height: 48px;
 }
 
-/* line 18, ../../src/stylesheets/less/_typography.scss */
+/* line 18, ./src/stylesheets/less/_typography.scss */
 .bigger, h3 {
   font-size: 26px;
   line-height: 36px;
 }
 
-/* line 23, ../../src/stylesheets/less/_typography.scss */
-.big, h4 {
+/* line 23, ./src/stylesheets/less/_typography.scss */
+.big, h4, body #main section h2 {
   font-size: 22px;
   line-height: 30px;
 }
 
-/* line 28, ../../src/stylesheets/less/_typography.scss */
+/* line 28, ./src/stylesheets/less/_typography.scss */
+.normal, body #main section .info h3 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* line 33, ./src/stylesheets/less/_typography.scss */
 body {
   font: 16px/24px Georgia, serif;
 }
 
-/* line 32, ../../src/stylesheets/less/_typography.scss */
+/* line 37, ./src/stylesheets/less/_typography.scss */
 .small, small {
   font-size: 13px;
   line-height: 18px;
 }
 
-/* line 19, ./src/stylesheets/partials/_global.sass */
+/* line 24, ./src/stylesheets/partials/_global.scss */
 body {
   background: #e8e8e8;
   color: #3c3c3c;
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 34, ../../src/stylesheets/less/_framework.scss */
+/* line 34, ./src/stylesheets/less/_framework.scss */
 ::selection {
   background: rgb(255,255,158);
 }
 
-/* line 35, ../../src/stylesheets/less/_framework.scss */
+/* line 35, ./src/stylesheets/less/_framework.scss */
 ::-moz-selection {
   background: rgb(255,255,158);
 }
 
-/* line 36, ../../src/stylesheets/less/_framework.scss */
+/* line 36, ./src/stylesheets/less/_framework.scss */
 img::selection {
   background: transparent;
 }
 
-/* line 37, ../../src/stylesheets/less/_framework.scss */
+/* line 37, ./src/stylesheets/less/_framework.scss */
 img::-moz-selection {
   background: transparent;
 }
 
-/* line 38, ../../src/stylesheets/less/_framework.scss */
+/* line 38, ./src/stylesheets/less/_framework.scss */
 body {
   -webkit-tap-highlight-color: rgb(255,255,158);
+}
+
+/* line 39, ./src/stylesheets/partials/_global.scss */
+body {
+  background: url(/images/bg.jpg);
+}
+/* line 41, ./src/stylesheets/partials/_global.scss */
+body header {
+  width: 992px;
+  margin: 24px auto;
+  zoom: 1;
+  display: block;
+}
+/* line 42, ./src/stylesheets/less/_framework.scss */
+body header:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* line 45, ./src/stylesheets/partials/_global.scss */
+body header h1 {
+  color: #ffffdd;
+  float: left;
+  letter-spacing: -1px;
+  text-shadow: rgba(0, 0, 0, 0.5) -1px 0, rgba(0, 0, 0, 0.3) 0 -1px, rgba(255, 255, 255, 0.5) 0 1px, rgba(0, 0, 0, 0.3) -1px -2px;
+}
+/* line 54, ./src/stylesheets/partials/_global.scss */
+body header .services {
+  float: right;
+  margin-top: 14px;
+}
+/* line 57, ./src/stylesheets/partials/_global.scss */
+body header .services a {
+  text-decoration: none;
+}
+/* line 62, ./src/stylesheets/partials/_global.scss */
+body #main {
+  background: #ffffcc;
+  color: black;
+  margin: 0 auto 48px;
+  padding: 0 48px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  -o-background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  -khtml-background-clip: padding-box;
+  background-clip: padding-box;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -o-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -khtml-border-radius: 7px;
+  border-radius: 7px;
+  -moz-box-shadow: black 1px 1px 5px inset;
+  -webkit-box-shadow: black 1px 1px 5px inset;
+  -o-box-shadow: black 1px 1px 5px inset;
+  box-shadow: black 1px 1px 5px inset;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffdd), color-stop(10%, #ffffcc), color-stop(100%, #ffffcc));
+  background-image: -moz-linear-gradient(top, #ffffdd 0%, #ffffcc 10%, #ffffcc 100%);
+  background-image: linear-gradient(top, #ffffdd 0%, #ffffcc 10%, #ffffcc 100%);
+}
+/* line 73, ./src/stylesheets/partials/_global.scss */
+body #main section {
+  zoom: 1;
+  display: block;
+}
+/* line 42, ./src/stylesheets/less/_framework.scss */
+body #main section:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* line 75, ./src/stylesheets/partials/_global.scss */
+body #main section h2 {
+  background: rgba(0, 0, 0, 0.85);
+  color: #ffffdd;
+  margin: 0 -48px 0;
+  padding: 12px 48px;
+  -moz-box-shadow: black 0 0 2px 0;
+  -webkit-box-shadow: black 0 0 2px 0;
+  -o-box-shadow: black 0 0 2px 0;
+  box-shadow: black 0 0 2px 0;
+  text-shadow: rgba(0, 0, 0, 0.5) -1px 0, rgba(0, 0, 0, 0.3) 0 -1px, rgba(255, 255, 255, 0.5) 0 1px, rgba(0, 0, 0, 0.3) -1px -2px;
+}
+/* line 87, ./src/stylesheets/partials/_global.scss */
+body #main section .info {
+  padding-top: 24px;
+}
+/* line 89, ./src/stylesheets/partials/_global.scss */
+body #main section .info h3 {
+  margin-bottom: 24px;
+}
+/* line 93, ./src/stylesheets/partials/_global.scss */
+body #main section .info p.description {
+  margin-bottom: 24px;
+}
+/* line 96, ./src/stylesheets/partials/_global.scss */
+body #main section .info .item {
+  width: 896px;
+  zoom: 1;
+  display: block;
+}
+/* line 42, ./src/stylesheets/less/_framework.scss */
+body #main section .info .item:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* line 99, ./src/stylesheets/partials/_global.scss */
+body #main section .info .item p {
+  width: 344px;
+  margin-right: 24px;
+  float: left;
+}
+/* line 103, ./src/stylesheets/partials/_global.scss */
+body #main section .info .item .thumb {
+  float: left;
+  width: 526px;
+  height: 295px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  background: white;
+  -moz-box-shadow: #cccccc 0 0 5px inset;
+  -webkit-box-shadow: #cccccc 0 0 5px inset;
+  -o-box-shadow: #cccccc 0 0 5px inset;
+  box-shadow: #cccccc 0 0 5px inset;
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  -moz-box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+  box-orient: horizontal;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+}
+/* line 117, ./src/stylesheets/partials/_global.scss */
+body #main section .info .item .thumb img {
+  max-width: 506px;
+  max-height: 275px;
 }
 
 /* Default Layout: 992px.
@@ -102,22 +259,25 @@ body {
  * Outer margins: 48px.
  * Leftover space for scrollbars @1024px: 32px.  */
 /* line 6, ./src/stylesheets/partials/_default.sass */
-body {
+#main {
   width: 896px;
-  float: left;
   padding: 72px 48px 84px;
 }
 
 /* Tablet Layout: 768px.
- * Gutters: 24px.
- * Outer margins: 28px.
- * Inherits styles from: Default Layout.  */
+   Gutters: 24px.
+   Outer margins: 28px.
+   Inherits styles from: Default Layout.  */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 7, ./src/stylesheets/partials/_tablet.sass */
-  body {
+  /* line 7, ./src/stylesheets/partials/_tablet.scss */
+  #main {
     width: 712px;
-    float: left;
     padding: 48px 28px 60px;
+  }
+
+  /* line 11, ./src/stylesheets/partials/_tablet.scss */
+  body header {
+    width: 810px;
   }
 }
 
@@ -127,9 +287,8 @@ body {
  * Inherits styles from: Default Layout.  */
 @media only screen and (max-width: 767px) {
   /* line 7, ./src/stylesheets/partials/_mobile.sass */
-  body {
+  #main {
     width: 252px;
-    float: left;
     padding: 48px 34px 60px;
   }
 }
@@ -140,9 +299,8 @@ body {
  * Inherits styles from: Default Layout, Mobile Layout.  */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   /* line 7, ./src/stylesheets/partials/_wide-mobile.sass */
-  body {
+  #main {
     width: 436px;
-    float: left;
     padding: 36px 22px 48px;
   }
 }
@@ -151,49 +309,3 @@ body {
    Overrides styles for devices with a
    device-pixel-ratio of 2+, such as iPhone 4.  */
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {}
-/* line 12, ../../src/stylesheets/screen.scss */
-body {
-  background: url(/images/bg.jpg);
-  color: white;
-}
-/* line 15, ../../src/stylesheets/screen.scss */
-body section {
-  background: white;
-  color: black;
-  zoom: 1;
-  display: block;
-}
-/* line 42, ../../src/stylesheets/less/_framework.scss */
-body section:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-/* line 19, ../../src/stylesheets/screen.scss */
-body section .item {
-  width: 896px;
-  float: left;
-  zoom: 1;
-  display: block;
-}
-/* line 42, ../../src/stylesheets/less/_framework.scss */
-body section .item:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-/* line 22, ../../src/stylesheets/screen.scss */
-body section .item p {
-  width: 344px;
-  float: left;
-  margin-right: 24px;
-}
-/* line 25, ../../src/stylesheets/screen.scss */
-body section .item img {
-  width: 528px;
-  float: left;
-}
