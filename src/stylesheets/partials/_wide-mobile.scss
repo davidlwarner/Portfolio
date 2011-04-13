@@ -7,4 +7,41 @@
   #{$less-grid-element} {
     @include grid(5)
   }
+  body {
+    header {
+      width: auto;
+      h1 {
+        font-size: 42px;
+        line-height: 48px;
+      }
+      h1, .services {
+        float: none;
+        text-align: center;
+      }
+    }
+    #main {
+      section {
+        .info {
+          .item {
+            .thumb {
+              float: none;
+              margin: 0 auto 15px;
+              width: 434px;
+              height: 242px;
+              img {
+                max-width: 414px;
+                max-height: 222px;
+              }
+            }
+            p {
+              float: none;
+              @include column(5, true);
+              margin: 0 auto 24px;
+              margin-bottom: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

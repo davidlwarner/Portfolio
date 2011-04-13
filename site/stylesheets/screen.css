@@ -282,16 +282,12 @@ body #main section .info .item .thumb img {
     font-size: 42px;
     line-height: 48px;
   }
-  /* line 18, ../../src/stylesheets/partials/_tablet.scss */
-  body #main {
-    padding: 0 18px;
-  }
-  /* line 23, ../../src/stylesheets/partials/_tablet.scss */
+  /* line 22, ../../src/stylesheets/partials/_tablet.scss */
   body #main section .info .item .thumb {
     float: none;
     margin: 0 auto 15px;
   }
-  /* line 27, ../../src/stylesheets/partials/_tablet.scss */
+  /* line 26, ../../src/stylesheets/partials/_tablet.scss */
   body #main section .info .item p {
     float: none;
     width: 528px;
@@ -321,6 +317,40 @@ body #main section .info .item .thumb img {
   #main {
     width: 436px;
     padding: 36px 22px 48px;
+  }
+
+  /* line 11, ../../src/stylesheets/partials/_wide-mobile.scss */
+  body header {
+    width: auto;
+  }
+  /* line 13, ../../src/stylesheets/partials/_wide-mobile.scss */
+  body header h1 {
+    font-size: 42px;
+    line-height: 48px;
+  }
+  /* line 17, ../../src/stylesheets/partials/_wide-mobile.scss */
+  body header h1, body header .services {
+    float: none;
+    text-align: center;
+  }
+  /* line 26, ../../src/stylesheets/partials/_wide-mobile.scss */
+  body #main section .info .item .thumb {
+    float: none;
+    margin: 0 auto 15px;
+    width: 434px;
+    height: 242px;
+  }
+  /* line 31, ../../src/stylesheets/partials/_wide-mobile.scss */
+  body #main section .info .item .thumb img {
+    max-width: 414px;
+    max-height: 222px;
+  }
+  /* line 36, ../../src/stylesheets/partials/_wide-mobile.scss */
+  body #main section .info .item p {
+    float: none;
+    width: 436px;
+    margin: 0 auto 24px;
+    margin-bottom: 24px;
   }
 }
 
