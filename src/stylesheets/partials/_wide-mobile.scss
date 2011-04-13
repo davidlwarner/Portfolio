@@ -3,6 +3,8 @@
    Outer margins: 22px.
    Inherits styles from: Default Layout, Mobile Layout.  */
 
-@media only screen and (min-width: 480px) and (max-width: 767px)
-  #{$less-grid-element}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #{$less-grid-element} {
     @include grid(5)
+  }
+}

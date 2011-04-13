@@ -253,10 +253,10 @@ body #main section .info .item .thumb img {
 }
 
 /* Default Layout: 992px.
- * Gutters: 24px.
- * Outer margins: 48px.
- * Leftover space for scrollbars @1024px: 32px.  */
-/* line 6, ./src/stylesheets/partials/_default.sass */
+   Gutters: 24px.
+   Outer margins: 48px.
+   Leftover space for scrollbars @1024px: 32px.  */
+/* line 6, ../../src/stylesheets/partials/_default.scss */
 #main {
   width: 896px;
   padding: 72px 48px 84px;
@@ -301,11 +301,11 @@ body #main section .info .item .thumb img {
 }
 
 /* Mobile Layout: 320px.
- * Gutters: 24px.
- * Outer margins: 34px.
- * Inherits styles from: Default Layout.  */
+   Gutters: 24px.
+   Outer margins: 34px.
+   Inherits styles from: Default Layout.  */
 @media only screen and (max-width: 767px) {
-  /* line 7, ./src/stylesheets/partials/_mobile.sass */
+  /* line 7, ../../src/stylesheets/partials/_mobile.scss */
   #main {
     width: 252px;
     padding: 48px 34px 60px;
@@ -313,11 +313,11 @@ body #main section .info .item .thumb img {
 }
 
 /* Wide Mobile Layout: 480px.
- * Gutters: 24px.
- * Outer margins: 22px.
- * Inherits styles from: Default Layout, Mobile Layout.  */
+   Gutters: 24px.
+   Outer margins: 22px.
+   Inherits styles from: Default Layout, Mobile Layout.  */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 7, ./src/stylesheets/partials/_wide-mobile.sass */
+  /* line 7, ../../src/stylesheets/partials/_wide-mobile.scss */
   #main {
     width: 436px;
     padding: 36px 22px 48px;

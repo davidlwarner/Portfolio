@@ -3,5 +3,6 @@
    Outer margins: 48px.
    Leftover space for scrollbars @1024px: 32px.  */
 
-#{$less-grid-element}
+#{$less-grid-element} {
   @include grid(10)
+}
