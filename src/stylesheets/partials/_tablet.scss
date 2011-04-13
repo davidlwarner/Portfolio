@@ -9,7 +9,30 @@
   }
   body {
     header {
-      width: 810px;
+      width: 750px;
+      h1 {
+      	font-size: 42px;
+      	line-height: 48px;
+      }
+    }
+    #main {
+      padding: 0 18px;
+      section {
+        .info {
+          .item {
+            .thumb {
+              float: none;
+              margin: 0 auto 15px;
+            }
+            p {
+              float: none;
+              @include column(6, true);
+              margin: 0 auto 24px;
+              margin-bottom: 24px;
+            }
+          }
+        }
+      }
     }
   }
 }

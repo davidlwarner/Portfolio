@@ -1,4 +1,4 @@
-/* line 7, ./src/stylesheets/less/_reset.scss */
+/* line 7, ../../src/stylesheets/less/_reset.scss */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em,
 img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr,
@@ -11,110 +11,110 @@ menu, footer, header, nav, section, summary, time, mark, audio, video {
   border: 0;
 }
 
-/* line 14, ./src/stylesheets/less/_reset.scss */
+/* line 14, ../../src/stylesheets/less/_reset.scss */
 article, aside, canvas, figure, figure img, figcaption, hgroup,
 footer, header, nav, section, audio, video {
   display: block;
 }
 
-/* line 18, ./src/stylesheets/less/_reset.scss */
+/* line 18, ../../src/stylesheets/less/_reset.scss */
 a img {
   border: 0;
 }
 
-/* line 1, ./src/stylesheets/less/_typography.scss */
+/* line 1, ../../src/stylesheets/less/_typography.scss */
 .gigantic {
   font-size: 110px;
   line-height: 120px;
   letter-spacing: -2px;
 }
 
-/* line 7, ./src/stylesheets/less/_typography.scss */
+/* line 7, ../../src/stylesheets/less/_typography.scss */
 .huge, h1 {
   font-size: 68px;
   line-height: 72px;
   letter-spacing: -1px;
 }
 
-/* line 13, ./src/stylesheets/less/_typography.scss */
+/* line 13, ../../src/stylesheets/less/_typography.scss */
 .large, h2 {
   font-size: 42px;
   line-height: 48px;
 }
 
-/* line 18, ./src/stylesheets/less/_typography.scss */
+/* line 18, ../../src/stylesheets/less/_typography.scss */
 .bigger, h3 {
   font-size: 26px;
   line-height: 36px;
 }
 
-/* line 23, ./src/stylesheets/less/_typography.scss */
+/* line 23, ../../src/stylesheets/less/_typography.scss */
 .big, h4, body #main section h2 {
   font-size: 22px;
   line-height: 30px;
 }
 
-/* line 28, ./src/stylesheets/less/_typography.scss */
+/* line 28, ../../src/stylesheets/less/_typography.scss */
 .normal, body #main section .info h3 {
   font-size: 16px;
   line-height: 24px;
 }
 
-/* line 33, ./src/stylesheets/less/_typography.scss */
+/* line 33, ../../src/stylesheets/less/_typography.scss */
 body {
   font: 16px/24px Georgia, serif;
 }
 
-/* line 37, ./src/stylesheets/less/_typography.scss */
+/* line 37, ../../src/stylesheets/less/_typography.scss */
 .small, small {
   font-size: 13px;
   line-height: 18px;
 }
 
-/* line 24, ./src/stylesheets/partials/_global.scss */
+/* line 24, ../../src/stylesheets/partials/_global.scss */
 body {
   background: #e8e8e8;
   color: #3c3c3c;
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 34, ./src/stylesheets/less/_framework.scss */
+/* line 34, ../../src/stylesheets/less/_framework.scss */
 ::selection {
   background: rgb(255,255,158);
 }
 
-/* line 35, ./src/stylesheets/less/_framework.scss */
+/* line 35, ../../src/stylesheets/less/_framework.scss */
 ::-moz-selection {
   background: rgb(255,255,158);
 }
 
-/* line 36, ./src/stylesheets/less/_framework.scss */
+/* line 36, ../../src/stylesheets/less/_framework.scss */
 img::selection {
   background: transparent;
 }
 
-/* line 37, ./src/stylesheets/less/_framework.scss */
+/* line 37, ../../src/stylesheets/less/_framework.scss */
 img::-moz-selection {
   background: transparent;
 }
 
-/* line 38, ./src/stylesheets/less/_framework.scss */
+/* line 38, ../../src/stylesheets/less/_framework.scss */
 body {
   -webkit-tap-highlight-color: rgb(255,255,158);
 }
 
-/* line 39, ./src/stylesheets/partials/_global.scss */
+/* line 39, ../../src/stylesheets/partials/_global.scss */
 body {
-  background: url(/images/bg.jpg);
+  background: #a64207 url(/images/bg.jpg);
 }
-/* line 41, ./src/stylesheets/partials/_global.scss */
+/* line 41, ../../src/stylesheets/partials/_global.scss */
 body header {
-  width: 992px;
+  width: 934px;
   margin: 24px auto;
   zoom: 1;
   display: block;
 }
-/* line 42, ./src/stylesheets/less/_framework.scss */
+/* line 42, ../../src/stylesheets/less/_framework.scss */
 body header:after {
   content: ".";
   display: block;
@@ -122,28 +122,27 @@ body header:after {
   clear: both;
   visibility: hidden;
 }
-/* line 45, ./src/stylesheets/partials/_global.scss */
+/* line 45, ../../src/stylesheets/partials/_global.scss */
 body header h1 {
   color: #ffffdd;
   float: left;
   letter-spacing: -1px;
   text-shadow: rgba(0, 0, 0, 0.5) -1px 0, rgba(0, 0, 0, 0.3) 0 -1px, rgba(255, 255, 255, 0.5) 0 1px, rgba(0, 0, 0, 0.3) -1px -2px;
 }
-/* line 54, ./src/stylesheets/partials/_global.scss */
+/* line 54, ../../src/stylesheets/partials/_global.scss */
 body header .services {
   float: right;
-  margin-top: 14px;
 }
-/* line 57, ./src/stylesheets/partials/_global.scss */
+/* line 56, ../../src/stylesheets/partials/_global.scss */
 body header .services a {
   text-decoration: none;
 }
-/* line 62, ./src/stylesheets/partials/_global.scss */
+/* line 61, ../../src/stylesheets/partials/_global.scss */
 body #main {
   background: #ffffcc;
   color: black;
   margin: 0 auto 48px;
-  padding: 0 48px;
+  padding: 0 18px;
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.25);
   -moz-background-clip: padding;
@@ -166,12 +165,12 @@ body #main {
   background-image: -moz-linear-gradient(top, #ffffdd 0%, #ffffcc 10%, #ffffcc 100%);
   background-image: linear-gradient(top, #ffffdd 0%, #ffffcc 10%, #ffffcc 100%);
 }
-/* line 73, ./src/stylesheets/partials/_global.scss */
+/* line 72, ../../src/stylesheets/partials/_global.scss */
 body #main section {
   zoom: 1;
   display: block;
 }
-/* line 42, ./src/stylesheets/less/_framework.scss */
+/* line 42, ../../src/stylesheets/less/_framework.scss */
 body #main section:after {
   content: ".";
   display: block;
@@ -179,37 +178,36 @@ body #main section:after {
   clear: both;
   visibility: hidden;
 }
-/* line 75, ./src/stylesheets/partials/_global.scss */
+/* line 74, ../../src/stylesheets/partials/_global.scss */
 body #main section h2 {
   background: rgba(0, 0, 0, 0.85);
   color: #ffffdd;
-  margin: 0 -48px 0;
-  padding: 12px 48px;
+  margin: 0 -18px 0;
+  padding: 12px 18px;
   -moz-box-shadow: black 0 0 2px 0;
   -webkit-box-shadow: black 0 0 2px 0;
   -o-box-shadow: black 0 0 2px 0;
   box-shadow: black 0 0 2px 0;
   text-shadow: rgba(0, 0, 0, 0.5) -1px 0, rgba(0, 0, 0, 0.3) 0 -1px, rgba(255, 255, 255, 0.5) 0 1px, rgba(0, 0, 0, 0.3) -1px -2px;
 }
-/* line 87, ./src/stylesheets/partials/_global.scss */
+/* line 86, ../../src/stylesheets/partials/_global.scss */
 body #main section .info {
   padding-top: 24px;
 }
-/* line 89, ./src/stylesheets/partials/_global.scss */
+/* line 88, ../../src/stylesheets/partials/_global.scss */
 body #main section .info h3 {
   margin-bottom: 24px;
 }
-/* line 93, ./src/stylesheets/partials/_global.scss */
+/* line 92, ../../src/stylesheets/partials/_global.scss */
 body #main section .info p.description {
   margin-bottom: 24px;
 }
-/* line 96, ./src/stylesheets/partials/_global.scss */
+/* line 95, ../../src/stylesheets/partials/_global.scss */
 body #main section .info .item {
-  width: 896px;
   zoom: 1;
   display: block;
 }
-/* line 42, ./src/stylesheets/less/_framework.scss */
+/* line 42, ../../src/stylesheets/less/_framework.scss */
 body #main section .info .item:after {
   content: ".";
   display: block;
@@ -217,15 +215,15 @@ body #main section .info .item:after {
   clear: both;
   visibility: hidden;
 }
-/* line 99, ./src/stylesheets/partials/_global.scss */
+/* line 97, ../../src/stylesheets/partials/_global.scss */
 body #main section .info .item p {
-  width: 344px;
-  margin-right: 24px;
   float: left;
+  width: 344px;
 }
-/* line 103, ./src/stylesheets/partials/_global.scss */
+/* line 101, ../../src/stylesheets/partials/_global.scss */
 body #main section .info .item .thumb {
   float: left;
+  margin-right: 24px;
   width: 526px;
   height: 295px;
   border: 1px solid #ccc;
@@ -248,7 +246,7 @@ body #main section .info .item .thumb {
   -webkit-box-align: center;
   box-align: center;
 }
-/* line 117, ./src/stylesheets/partials/_global.scss */
+/* line 116, ../../src/stylesheets/partials/_global.scss */
 body #main section .info .item .thumb img {
   max-width: 506px;
   max-height: 275px;
@@ -269,15 +267,36 @@ body #main section .info .item .thumb img {
    Outer margins: 28px.
    Inherits styles from: Default Layout.  */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 7, ./src/stylesheets/partials/_tablet.scss */
+  /* line 7, ../../src/stylesheets/partials/_tablet.scss */
   #main {
     width: 712px;
     padding: 48px 28px 60px;
   }
 
-  /* line 11, ./src/stylesheets/partials/_tablet.scss */
+  /* line 11, ../../src/stylesheets/partials/_tablet.scss */
   body header {
-    width: 810px;
+    width: 750px;
+  }
+  /* line 13, ../../src/stylesheets/partials/_tablet.scss */
+  body header h1 {
+    font-size: 42px;
+    line-height: 48px;
+  }
+  /* line 18, ../../src/stylesheets/partials/_tablet.scss */
+  body #main {
+    padding: 0 18px;
+  }
+  /* line 23, ../../src/stylesheets/partials/_tablet.scss */
+  body #main section .info .item .thumb {
+    float: none;
+    margin: 0 auto 15px;
+  }
+  /* line 27, ../../src/stylesheets/partials/_tablet.scss */
+  body #main section .info .item p {
+    float: none;
+    width: 528px;
+    margin: 0 auto 24px;
+    margin-bottom: 24px;
   }
 }
 
