@@ -14,6 +14,16 @@
       	font-size: 42px;
       	line-height: 48px;
       }
+      .services {
+        a {
+          width: 32px;
+          height: 32px;
+          &.email     { background-image: url(/images/email-32x32.png); }
+          &.facebook  { background-image: url(/images/facebook-32x32.png); }
+          &.linkedin  { background-image: url(/images/linkedin-32x32.png); }
+          &.twitter   { background-image: url(/images/twitter-32x32.png); }
+        }
+      }
     }
     #main {
       section {

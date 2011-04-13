@@ -126,18 +126,45 @@ body header:after {
 body header h1 {
   color: #ffffdd;
   float: left;
-  letter-spacing: -1px;
   text-shadow: rgba(0, 0, 0, 0.5) -1px 0, rgba(0, 0, 0, 0.3) 0 -1px, rgba(255, 255, 255, 0.5) 0 1px, rgba(0, 0, 0, 0.3) -1px -2px;
 }
-/* line 54, ../../src/stylesheets/partials/_global.scss */
+/* line 53, ../../src/stylesheets/partials/_global.scss */
 body header .services {
   float: right;
 }
-/* line 56, ../../src/stylesheets/partials/_global.scss */
+/* line 55, ../../src/stylesheets/partials/_global.scss */
 body header .services a {
-  text-decoration: none;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  margin-left: 4px;
+  width: 24px;
+  height: 24px;
+  text-indent: -9999px;
+}
+/* line 7, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+body header .services a {
+  *display: inline;
 }
 /* line 61, ../../src/stylesheets/partials/_global.scss */
+body header .services a.email {
+  background-image: url(/images/email-24x24.png);
+}
+/* line 62, ../../src/stylesheets/partials/_global.scss */
+body header .services a.facebook {
+  background-image: url(/images/facebook-24x24.png);
+}
+/* line 63, ../../src/stylesheets/partials/_global.scss */
+body header .services a.linkedin {
+  background-image: url(/images/linkedin-24x24.png);
+}
+/* line 64, ../../src/stylesheets/partials/_global.scss */
+body header .services a.twitter {
+  background-image: url(/images/twitter-24x24.png);
+}
+/* line 68, ../../src/stylesheets/partials/_global.scss */
 body #main {
   background: #ffffcc;
   color: black;
@@ -165,7 +192,7 @@ body #main {
   background-image: -moz-linear-gradient(top, #ffffdd 0%, #ffffcc 10%, #ffffcc 100%);
   background-image: linear-gradient(top, #ffffdd 0%, #ffffcc 10%, #ffffcc 100%);
 }
-/* line 72, ../../src/stylesheets/partials/_global.scss */
+/* line 79, ../../src/stylesheets/partials/_global.scss */
 body #main section {
   zoom: 1;
   display: block;
@@ -178,7 +205,7 @@ body #main section:after {
   clear: both;
   visibility: hidden;
 }
-/* line 74, ../../src/stylesheets/partials/_global.scss */
+/* line 81, ../../src/stylesheets/partials/_global.scss */
 body #main section h2 {
   background: rgba(0, 0, 0, 0.85);
   color: #ffffdd;
@@ -190,19 +217,19 @@ body #main section h2 {
   box-shadow: black 0 0 2px 0;
   text-shadow: rgba(0, 0, 0, 0.5) -1px 0, rgba(0, 0, 0, 0.3) 0 -1px, rgba(255, 255, 255, 0.5) 0 1px, rgba(0, 0, 0, 0.3) -1px -2px;
 }
-/* line 86, ../../src/stylesheets/partials/_global.scss */
+/* line 93, ../../src/stylesheets/partials/_global.scss */
 body #main section .info {
   padding-top: 24px;
 }
-/* line 88, ../../src/stylesheets/partials/_global.scss */
+/* line 95, ../../src/stylesheets/partials/_global.scss */
 body #main section .info h3 {
   margin-bottom: 24px;
 }
-/* line 92, ../../src/stylesheets/partials/_global.scss */
+/* line 99, ../../src/stylesheets/partials/_global.scss */
 body #main section .info p.description {
   margin-bottom: 24px;
 }
-/* line 95, ../../src/stylesheets/partials/_global.scss */
+/* line 102, ../../src/stylesheets/partials/_global.scss */
 body #main section .info .item {
   zoom: 1;
   display: block;
@@ -215,12 +242,12 @@ body #main section .info .item:after {
   clear: both;
   visibility: hidden;
 }
-/* line 97, ../../src/stylesheets/partials/_global.scss */
+/* line 104, ../../src/stylesheets/partials/_global.scss */
 body #main section .info .item p {
   float: left;
   width: 344px;
 }
-/* line 101, ../../src/stylesheets/partials/_global.scss */
+/* line 108, ../../src/stylesheets/partials/_global.scss */
 body #main section .info .item .thumb {
   float: left;
   margin-right: 24px;
@@ -246,7 +273,7 @@ body #main section .info .item .thumb {
   -webkit-box-align: center;
   box-align: center;
 }
-/* line 116, ../../src/stylesheets/partials/_global.scss */
+/* line 123, ../../src/stylesheets/partials/_global.scss */
 body #main section .info .item .thumb img {
   max-width: 506px;
   max-height: 275px;
@@ -282,12 +309,33 @@ body #main section .info .item .thumb img {
     font-size: 42px;
     line-height: 48px;
   }
+  /* line 18, ../../src/stylesheets/partials/_tablet.scss */
+  body header .services a {
+    width: 32px;
+    height: 32px;
+  }
+  /* line 21, ../../src/stylesheets/partials/_tablet.scss */
+  body header .services a.email {
+    background-image: url(/images/email-32x32.png);
+  }
   /* line 22, ../../src/stylesheets/partials/_tablet.scss */
+  body header .services a.facebook {
+    background-image: url(/images/facebook-32x32.png);
+  }
+  /* line 23, ../../src/stylesheets/partials/_tablet.scss */
+  body header .services a.linkedin {
+    background-image: url(/images/linkedin-32x32.png);
+  }
+  /* line 24, ../../src/stylesheets/partials/_tablet.scss */
+  body header .services a.twitter {
+    background-image: url(/images/twitter-32x32.png);
+  }
+  /* line 32, ../../src/stylesheets/partials/_tablet.scss */
   body #main section .info .item .thumb {
     float: none;
     margin: 0 auto 15px;
   }
-  /* line 26, ../../src/stylesheets/partials/_tablet.scss */
+  /* line 36, ../../src/stylesheets/partials/_tablet.scss */
   body #main section .info .item p {
     float: none;
     width: 528px;
@@ -306,6 +354,83 @@ body #main section .info .item .thumb img {
     width: 252px;
     padding: 48px 34px 60px;
   }
+
+  /* line 11, ../../src/stylesheets/partials/_mobile.scss */
+  body header {
+    width: auto;
+    margin: 12px auto;
+  }
+  /* line 14, ../../src/stylesheets/partials/_mobile.scss */
+  body header h1 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  /* line 18, ../../src/stylesheets/partials/_mobile.scss */
+  body header h1, body header .services {
+    float: none;
+    text-align: center;
+  }
+  /* line 22, ../../src/stylesheets/partials/_mobile.scss */
+  body header .services {
+    margin: 8px 0;
+  }
+  /* line 24, ../../src/stylesheets/partials/_mobile.scss */
+  body header .services a {
+    width: 32px;
+    height: 32px;
+    margin: 0 8px;
+  }
+  /* line 28, ../../src/stylesheets/partials/_mobile.scss */
+  body header .services a.email {
+    background-image: url(/images/email-32x32.png);
+  }
+  /* line 29, ../../src/stylesheets/partials/_mobile.scss */
+  body header .services a.facebook {
+    background-image: url(/images/facebook-32x32.png);
+  }
+  /* line 30, ../../src/stylesheets/partials/_mobile.scss */
+  body header .services a.linkedin {
+    background-image: url(/images/linkedin-32x32.png);
+  }
+  /* line 31, ../../src/stylesheets/partials/_mobile.scss */
+  body header .services a.twitter {
+    background-image: url(/images/twitter-32x32.png);
+  }
+  /* line 37, ../../src/stylesheets/partials/_mobile.scss */
+  body #main section h2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  /* line 42, ../../src/stylesheets/partials/_mobile.scss */
+  body #main section .info h3 {
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 12px;
+  }
+  /* line 47, ../../src/stylesheets/partials/_mobile.scss */
+  body #main section .info p.description {
+    margin-bottom: 12px;
+  }
+  /* line 51, ../../src/stylesheets/partials/_mobile.scss */
+  body #main section .info .item .thumb {
+    float: none;
+    margin: 0 auto 15px;
+    width: 250px;
+    height: 140px;
+  }
+  /* line 56, ../../src/stylesheets/partials/_mobile.scss */
+  body #main section .info .item .thumb img {
+    max-width: 240px;
+    max-height: 130px;
+  }
+  /* line 61, ../../src/stylesheets/partials/_mobile.scss */
+  body #main section .info .item p {
+    float: none;
+    width: 252px;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0 auto 12px;
+  }
 }
 
 /* Wide Mobile Layout: 480px.
@@ -322,30 +447,57 @@ body #main section .info .item .thumb img {
   /* line 11, ../../src/stylesheets/partials/_wide-mobile.scss */
   body header {
     width: auto;
+    margin: 12px auto;
   }
-  /* line 13, ../../src/stylesheets/partials/_wide-mobile.scss */
+  /* line 14, ../../src/stylesheets/partials/_wide-mobile.scss */
   body header h1 {
     font-size: 42px;
     line-height: 48px;
   }
-  /* line 17, ../../src/stylesheets/partials/_wide-mobile.scss */
+  /* line 18, ../../src/stylesheets/partials/_wide-mobile.scss */
   body header h1, body header .services {
     float: none;
     text-align: center;
   }
-  /* line 26, ../../src/stylesheets/partials/_wide-mobile.scss */
+  /* line 22, ../../src/stylesheets/partials/_wide-mobile.scss */
+  body header .services {
+    margin: 8px 0;
+  }
+  /* line 24, ../../src/stylesheets/partials/_wide-mobile.scss */
+  body header .services a {
+    width: 32px;
+    height: 32px;
+    margin: 0 8px;
+  }
+  /* line 28, ../../src/stylesheets/partials/_wide-mobile.scss */
+  body header .services a.email {
+    background-image: url(/images/email-32x32.png);
+  }
+  /* line 29, ../../src/stylesheets/partials/_wide-mobile.scss */
+  body header .services a.facebook {
+    background-image: url(/images/facebook-32x32.png);
+  }
+  /* line 30, ../../src/stylesheets/partials/_wide-mobile.scss */
+  body header .services a.linkedin {
+    background-image: url(/images/linkedin-32x32.png);
+  }
+  /* line 31, ../../src/stylesheets/partials/_wide-mobile.scss */
+  body header .services a.twitter {
+    background-image: url(/images/twitter-32x32.png);
+  }
+  /* line 39, ../../src/stylesheets/partials/_wide-mobile.scss */
   body #main section .info .item .thumb {
     float: none;
     margin: 0 auto 15px;
     width: 434px;
     height: 242px;
   }
-  /* line 31, ../../src/stylesheets/partials/_wide-mobile.scss */
+  /* line 44, ../../src/stylesheets/partials/_wide-mobile.scss */
   body #main section .info .item .thumb img {
     max-width: 414px;
     max-height: 222px;
   }
-  /* line 36, ../../src/stylesheets/partials/_wide-mobile.scss */
+  /* line 49, ../../src/stylesheets/partials/_wide-mobile.scss */
   body #main section .info .item p {
     float: none;
     width: 436px;
@@ -357,4 +509,35 @@ body #main section .info .item .thumb img {
 /* Retina media query.
    Overrides styles for devices with a
    device-pixel-ratio of 2+, such as iPhone 4.  */
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  /* line 8, ../../src/stylesheets/partials/_high-px-ratio.scss */
+  body {
+    -moz-background-size: 127px 127px;
+    -webkit-background-size: 127px 127px;
+    -o-background-size: 127px 127px;
+    background-size: 127px 127px;
+  }
+  /* line 12, ../../src/stylesheets/partials/_high-px-ratio.scss */
+  body header .services a {
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+  /* line 14, ../../src/stylesheets/partials/_high-px-ratio.scss */
+  body header .services a.email {
+    background-image: url(/images/email-48x48.png);
+  }
+  /* line 15, ../../src/stylesheets/partials/_high-px-ratio.scss */
+  body header .services a.facebook {
+    background-image: url(/images/facebook-48x48.png);
+  }
+  /* line 16, ../../src/stylesheets/partials/_high-px-ratio.scss */
+  body header .services a.linkedin {
+    background-image: url(/images/linkedin-48x48.png);
+  }
+  /* line 17, ../../src/stylesheets/partials/_high-px-ratio.scss */
+  body header .services a.twitter {
+    background-image: url(/images/twitter-48x48.png);
+  }
+}
