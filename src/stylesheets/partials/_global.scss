@@ -37,18 +37,12 @@ $light-bg: #ffd;
 $bgcolor: #ffc;
 
 body {
-  background: #A64207 url(/images/bg.jpg);
   header {
     width: 934px;
     margin: 24px auto;
     @include clearfix;
     h1 {
-      color: $light-bg;
       float: left;
-      text-shadow: rgba(0,0,0,0.5)        -1px  0, 
-                   rgba(0,0,0,0.3)        0     -1px, 
-                   rgba(255,255,255,0.5)  0     1px, 
-                   rgba(0,0,0,0.3)        -1px  -2px;
     }
     .services {
       float: right;
@@ -75,7 +69,6 @@ body {
     @include background-clip(padding-box);
     @include border-radius(7px);
     @include box-shadow(black, 1px, 1px, 5px, inset);
-    @include linear-gradient(color-stops($light-bg, $bgcolor 10%, $bgcolor 100%));
     section {
       @include clearfix;
       h2 {

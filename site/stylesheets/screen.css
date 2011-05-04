@@ -1,4 +1,4 @@
-/* line 7, ../../src/stylesheets/less/_reset.scss */
+/* line 7, ./src/stylesheets/less/_reset.scss */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em,
 img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr,
@@ -11,110 +11,106 @@ menu, footer, header, nav, section, summary, time, mark, audio, video {
   border: 0;
 }
 
-/* line 14, ../../src/stylesheets/less/_reset.scss */
+/* line 14, ./src/stylesheets/less/_reset.scss */
 article, aside, canvas, figure, figure img, figcaption, hgroup,
 footer, header, nav, section, audio, video {
   display: block;
 }
 
-/* line 18, ../../src/stylesheets/less/_reset.scss */
+/* line 18, ./src/stylesheets/less/_reset.scss */
 a img {
   border: 0;
 }
 
-/* line 1, ../../src/stylesheets/less/_typography.scss */
+/* line 1, ./src/stylesheets/less/_typography.scss */
 .gigantic {
   font-size: 110px;
   line-height: 120px;
   letter-spacing: -2px;
 }
 
-/* line 7, ../../src/stylesheets/less/_typography.scss */
+/* line 7, ./src/stylesheets/less/_typography.scss */
 .huge, h1 {
   font-size: 68px;
   line-height: 72px;
   letter-spacing: -1px;
 }
 
-/* line 13, ../../src/stylesheets/less/_typography.scss */
+/* line 13, ./src/stylesheets/less/_typography.scss */
 .large, h2 {
   font-size: 42px;
   line-height: 48px;
 }
 
-/* line 18, ../../src/stylesheets/less/_typography.scss */
+/* line 18, ./src/stylesheets/less/_typography.scss */
 .bigger, h3 {
   font-size: 26px;
   line-height: 36px;
 }
 
-/* line 23, ../../src/stylesheets/less/_typography.scss */
+/* line 23, ./src/stylesheets/less/_typography.scss */
 .big, h4, body #main section h2 {
   font-size: 22px;
   line-height: 30px;
 }
 
-/* line 28, ../../src/stylesheets/less/_typography.scss */
+/* line 28, ./src/stylesheets/less/_typography.scss */
 .normal, body #main section .info h3 {
   font-size: 16px;
   line-height: 24px;
 }
 
-/* line 33, ../../src/stylesheets/less/_typography.scss */
+/* line 33, ./src/stylesheets/less/_typography.scss */
 body {
   font: 16px/24px Georgia, serif;
 }
 
-/* line 37, ../../src/stylesheets/less/_typography.scss */
+/* line 37, ./src/stylesheets/less/_typography.scss */
 .small, small {
   font-size: 13px;
   line-height: 18px;
 }
 
-/* line 24, ../../src/stylesheets/partials/_global.scss */
+/* line 24, ./src/stylesheets/partials/_global.scss */
 body {
   background: #e8e8e8;
   color: #3c3c3c;
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 34, ../../src/stylesheets/less/_framework.scss */
+/* line 34, ./src/stylesheets/less/_framework.scss */
 ::selection {
   background: rgb(255,255,158);
 }
 
-/* line 35, ../../src/stylesheets/less/_framework.scss */
+/* line 35, ./src/stylesheets/less/_framework.scss */
 ::-moz-selection {
   background: rgb(255,255,158);
 }
 
-/* line 36, ../../src/stylesheets/less/_framework.scss */
+/* line 36, ./src/stylesheets/less/_framework.scss */
 img::selection {
   background: transparent;
 }
 
-/* line 37, ../../src/stylesheets/less/_framework.scss */
+/* line 37, ./src/stylesheets/less/_framework.scss */
 img::-moz-selection {
   background: transparent;
 }
 
-/* line 38, ../../src/stylesheets/less/_framework.scss */
+/* line 38, ./src/stylesheets/less/_framework.scss */
 body {
   -webkit-tap-highlight-color: rgb(255,255,158);
 }
 
-/* line 39, ../../src/stylesheets/partials/_global.scss */
-body {
-  background: #a64207 url(/images/bg.jpg);
-}
-/* line 41, ../../src/stylesheets/partials/_global.scss */
+/* line 40, ./src/stylesheets/partials/_global.scss */
 body header {
   width: 934px;
   margin: 24px auto;
   zoom: 1;
   display: block;
 }
-/* line 42, ../../src/stylesheets/less/_framework.scss */
+/* line 42, ./src/stylesheets/less/_framework.scss */
 body header:after {
   content: ".";
   display: block;
@@ -122,17 +118,15 @@ body header:after {
   clear: both;
   visibility: hidden;
 }
-/* line 45, ../../src/stylesheets/partials/_global.scss */
+/* line 44, ./src/stylesheets/partials/_global.scss */
 body header h1 {
-  color: #ffffdd;
   float: left;
-  text-shadow: rgba(0, 0, 0, 0.5) -1px 0, rgba(0, 0, 0, 0.3) 0 -1px, rgba(255, 255, 255, 0.5) 0 1px, rgba(0, 0, 0, 0.3) -1px -2px;
 }
-/* line 53, ../../src/stylesheets/partials/_global.scss */
+/* line 47, ./src/stylesheets/partials/_global.scss */
 body header .services {
   float: right;
 }
-/* line 55, ../../src/stylesheets/partials/_global.scss */
+/* line 49, ./src/stylesheets/partials/_global.scss */
 body header .services a {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -144,27 +138,27 @@ body header .services a {
   height: 24px;
   text-indent: -9999px;
 }
-/* line 7, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+/* line 7, /Users/davidwarner/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
 body header .services a {
   *display: inline;
 }
-/* line 61, ../../src/stylesheets/partials/_global.scss */
+/* line 55, ./src/stylesheets/partials/_global.scss */
 body header .services a.email {
   background-image: url(/images/email-24x24.png);
 }
-/* line 62, ../../src/stylesheets/partials/_global.scss */
+/* line 56, ./src/stylesheets/partials/_global.scss */
 body header .services a.facebook {
   background-image: url(/images/facebook-24x24.png);
 }
-/* line 63, ../../src/stylesheets/partials/_global.scss */
+/* line 57, ./src/stylesheets/partials/_global.scss */
 body header .services a.linkedin {
   background-image: url(/images/linkedin-24x24.png);
 }
-/* line 64, ../../src/stylesheets/partials/_global.scss */
+/* line 58, ./src/stylesheets/partials/_global.scss */
 body header .services a.twitter {
   background-image: url(/images/twitter-24x24.png);
 }
-/* line 68, ../../src/stylesheets/partials/_global.scss */
+/* line 62, ./src/stylesheets/partials/_global.scss */
 body #main {
   background: #ffffcc;
   color: black;
@@ -188,16 +182,13 @@ body #main {
   -webkit-box-shadow: black 1px 1px 5px inset;
   -o-box-shadow: black 1px 1px 5px inset;
   box-shadow: black 1px 1px 5px inset;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffdd), color-stop(10%, #ffffcc), color-stop(100%, #ffffcc));
-  background-image: -moz-linear-gradient(top, #ffffdd 0%, #ffffcc 10%, #ffffcc 100%);
-  background-image: linear-gradient(top, #ffffdd 0%, #ffffcc 10%, #ffffcc 100%);
 }
-/* line 79, ../../src/stylesheets/partials/_global.scss */
+/* line 72, ./src/stylesheets/partials/_global.scss */
 body #main section {
   zoom: 1;
   display: block;
 }
-/* line 42, ../../src/stylesheets/less/_framework.scss */
+/* line 42, ./src/stylesheets/less/_framework.scss */
 body #main section:after {
   content: ".";
   display: block;
@@ -205,7 +196,7 @@ body #main section:after {
   clear: both;
   visibility: hidden;
 }
-/* line 81, ../../src/stylesheets/partials/_global.scss */
+/* line 74, ./src/stylesheets/partials/_global.scss */
 body #main section h2 {
   background: rgba(0, 0, 0, 0.85);
   color: #ffffdd;
@@ -217,24 +208,24 @@ body #main section h2 {
   box-shadow: black 0 0 2px 0;
   text-shadow: rgba(0, 0, 0, 0.5) -1px 0, rgba(0, 0, 0, 0.3) 0 -1px, rgba(255, 255, 255, 0.5) 0 1px, rgba(0, 0, 0, 0.3) -1px -2px;
 }
-/* line 93, ../../src/stylesheets/partials/_global.scss */
+/* line 86, ./src/stylesheets/partials/_global.scss */
 body #main section .info {
   padding-top: 24px;
 }
-/* line 95, ../../src/stylesheets/partials/_global.scss */
+/* line 88, ./src/stylesheets/partials/_global.scss */
 body #main section .info h3 {
   margin-bottom: 24px;
 }
-/* line 99, ../../src/stylesheets/partials/_global.scss */
+/* line 92, ./src/stylesheets/partials/_global.scss */
 body #main section .info p.description {
   margin-bottom: 24px;
 }
-/* line 102, ../../src/stylesheets/partials/_global.scss */
+/* line 95, ./src/stylesheets/partials/_global.scss */
 body #main section .info .item {
   zoom: 1;
   display: block;
 }
-/* line 42, ../../src/stylesheets/less/_framework.scss */
+/* line 42, ./src/stylesheets/less/_framework.scss */
 body #main section .info .item:after {
   content: ".";
   display: block;
@@ -242,12 +233,12 @@ body #main section .info .item:after {
   clear: both;
   visibility: hidden;
 }
-/* line 104, ../../src/stylesheets/partials/_global.scss */
+/* line 97, ./src/stylesheets/partials/_global.scss */
 body #main section .info .item p {
   float: left;
   width: 344px;
 }
-/* line 108, ../../src/stylesheets/partials/_global.scss */
+/* line 101, ./src/stylesheets/partials/_global.scss */
 body #main section .info .item .thumb {
   float: left;
   margin-right: 24px;
@@ -273,7 +264,7 @@ body #main section .info .item .thumb {
   -webkit-box-align: center;
   box-align: center;
 }
-/* line 123, ../../src/stylesheets/partials/_global.scss */
+/* line 116, ./src/stylesheets/partials/_global.scss */
 body #main section .info .item .thumb img {
   max-width: 506px;
   max-height: 275px;
@@ -283,7 +274,7 @@ body #main section .info .item .thumb img {
    Gutters: 24px.
    Outer margins: 48px.
    Leftover space for scrollbars @1024px: 32px.  */
-/* line 6, ../../src/stylesheets/partials/_default.scss */
+/* line 6, ./src/stylesheets/partials/_default.scss */
 #main {
   width: 896px;
   padding: 72px 48px 84px;
@@ -294,48 +285,48 @@ body #main section .info .item .thumb img {
    Outer margins: 28px.
    Inherits styles from: Default Layout.  */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 7, ../../src/stylesheets/partials/_tablet.scss */
+  /* line 7, ./src/stylesheets/partials/_tablet.scss */
   #main {
     width: 712px;
     padding: 48px 28px 60px;
   }
 
-  /* line 11, ../../src/stylesheets/partials/_tablet.scss */
+  /* line 11, ./src/stylesheets/partials/_tablet.scss */
   body header {
     width: 750px;
   }
-  /* line 13, ../../src/stylesheets/partials/_tablet.scss */
+  /* line 13, ./src/stylesheets/partials/_tablet.scss */
   body header h1 {
     font-size: 42px;
     line-height: 48px;
   }
-  /* line 18, ../../src/stylesheets/partials/_tablet.scss */
+  /* line 18, ./src/stylesheets/partials/_tablet.scss */
   body header .services a {
     width: 32px;
     height: 32px;
   }
-  /* line 21, ../../src/stylesheets/partials/_tablet.scss */
+  /* line 21, ./src/stylesheets/partials/_tablet.scss */
   body header .services a.email {
     background-image: url(/images/email-32x32.png);
   }
-  /* line 22, ../../src/stylesheets/partials/_tablet.scss */
+  /* line 22, ./src/stylesheets/partials/_tablet.scss */
   body header .services a.facebook {
     background-image: url(/images/facebook-32x32.png);
   }
-  /* line 23, ../../src/stylesheets/partials/_tablet.scss */
+  /* line 23, ./src/stylesheets/partials/_tablet.scss */
   body header .services a.linkedin {
     background-image: url(/images/linkedin-32x32.png);
   }
-  /* line 24, ../../src/stylesheets/partials/_tablet.scss */
+  /* line 24, ./src/stylesheets/partials/_tablet.scss */
   body header .services a.twitter {
     background-image: url(/images/twitter-32x32.png);
   }
-  /* line 32, ../../src/stylesheets/partials/_tablet.scss */
+  /* line 32, ./src/stylesheets/partials/_tablet.scss */
   body #main section .info .item .thumb {
     float: none;
     margin: 0 auto 15px;
   }
-  /* line 36, ../../src/stylesheets/partials/_tablet.scss */
+  /* line 36, ./src/stylesheets/partials/_tablet.scss */
   body #main section .info .item p {
     float: none;
     width: 528px;
@@ -343,87 +334,86 @@ body #main section .info .item .thumb img {
     margin-bottom: 24px;
   }
 }
-
 /* Mobile Layout: 320px.
    Gutters: 24px.
    Outer margins: 34px.
    Inherits styles from: Default Layout.  */
 @media only screen and (max-width: 767px) {
-  /* line 7, ../../src/stylesheets/partials/_mobile.scss */
+  /* line 7, ./src/stylesheets/partials/_mobile.scss */
   #main {
     width: 252px;
     padding: 48px 34px 60px;
   }
 
-  /* line 11, ../../src/stylesheets/partials/_mobile.scss */
+  /* line 11, ./src/stylesheets/partials/_mobile.scss */
   body header {
     width: auto;
     margin: 12px auto;
   }
-  /* line 14, ../../src/stylesheets/partials/_mobile.scss */
+  /* line 14, ./src/stylesheets/partials/_mobile.scss */
   body header h1 {
     font-size: 26px;
     line-height: 36px;
   }
-  /* line 18, ../../src/stylesheets/partials/_mobile.scss */
+  /* line 18, ./src/stylesheets/partials/_mobile.scss */
   body header h1, body header .services {
     float: none;
     text-align: center;
   }
-  /* line 22, ../../src/stylesheets/partials/_mobile.scss */
+  /* line 22, ./src/stylesheets/partials/_mobile.scss */
   body header .services {
     margin: 8px 0;
   }
-  /* line 24, ../../src/stylesheets/partials/_mobile.scss */
+  /* line 24, ./src/stylesheets/partials/_mobile.scss */
   body header .services a {
     width: 32px;
     height: 32px;
     margin: 0 8px;
   }
-  /* line 28, ../../src/stylesheets/partials/_mobile.scss */
+  /* line 28, ./src/stylesheets/partials/_mobile.scss */
   body header .services a.email {
     background-image: url(/images/email-32x32.png);
   }
-  /* line 29, ../../src/stylesheets/partials/_mobile.scss */
+  /* line 29, ./src/stylesheets/partials/_mobile.scss */
   body header .services a.facebook {
     background-image: url(/images/facebook-32x32.png);
   }
-  /* line 30, ../../src/stylesheets/partials/_mobile.scss */
+  /* line 30, ./src/stylesheets/partials/_mobile.scss */
   body header .services a.linkedin {
     background-image: url(/images/linkedin-32x32.png);
   }
-  /* line 31, ../../src/stylesheets/partials/_mobile.scss */
+  /* line 31, ./src/stylesheets/partials/_mobile.scss */
   body header .services a.twitter {
     background-image: url(/images/twitter-32x32.png);
   }
-  /* line 37, ../../src/stylesheets/partials/_mobile.scss */
+  /* line 37, ./src/stylesheets/partials/_mobile.scss */
   body #main section h2 {
     font-size: 16px;
     line-height: 24px;
   }
-  /* line 42, ../../src/stylesheets/partials/_mobile.scss */
+  /* line 42, ./src/stylesheets/partials/_mobile.scss */
   body #main section .info h3 {
     font-size: 13px;
     line-height: 18px;
     margin-bottom: 12px;
   }
-  /* line 47, ../../src/stylesheets/partials/_mobile.scss */
+  /* line 47, ./src/stylesheets/partials/_mobile.scss */
   body #main section .info p.description {
     margin-bottom: 12px;
   }
-  /* line 51, ../../src/stylesheets/partials/_mobile.scss */
+  /* line 51, ./src/stylesheets/partials/_mobile.scss */
   body #main section .info .item .thumb {
     float: none;
     margin: 0 auto 15px;
     width: 250px;
     height: 140px;
   }
-  /* line 56, ../../src/stylesheets/partials/_mobile.scss */
+  /* line 56, ./src/stylesheets/partials/_mobile.scss */
   body #main section .info .item .thumb img {
     max-width: 240px;
     max-height: 130px;
   }
-  /* line 61, ../../src/stylesheets/partials/_mobile.scss */
+  /* line 61, ./src/stylesheets/partials/_mobile.scss */
   body #main section .info .item p {
     float: none;
     width: 252px;
@@ -432,72 +422,71 @@ body #main section .info .item .thumb img {
     margin: 0 auto 12px;
   }
 }
-
 /* Wide Mobile Layout: 480px.
    Gutters: 24px.
    Outer margins: 22px.
    Inherits styles from: Default Layout, Mobile Layout.  */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 7, ../../src/stylesheets/partials/_wide-mobile.scss */
+  /* line 7, ./src/stylesheets/partials/_wide-mobile.scss */
   #main {
     width: 436px;
     padding: 36px 22px 48px;
   }
 
-  /* line 11, ../../src/stylesheets/partials/_wide-mobile.scss */
+  /* line 11, ./src/stylesheets/partials/_wide-mobile.scss */
   body header {
     width: auto;
     margin: 12px auto;
   }
-  /* line 14, ../../src/stylesheets/partials/_wide-mobile.scss */
+  /* line 14, ./src/stylesheets/partials/_wide-mobile.scss */
   body header h1 {
     font-size: 42px;
     line-height: 48px;
   }
-  /* line 18, ../../src/stylesheets/partials/_wide-mobile.scss */
+  /* line 18, ./src/stylesheets/partials/_wide-mobile.scss */
   body header h1, body header .services {
     float: none;
     text-align: center;
   }
-  /* line 22, ../../src/stylesheets/partials/_wide-mobile.scss */
+  /* line 22, ./src/stylesheets/partials/_wide-mobile.scss */
   body header .services {
     margin: 8px 0;
   }
-  /* line 24, ../../src/stylesheets/partials/_wide-mobile.scss */
+  /* line 24, ./src/stylesheets/partials/_wide-mobile.scss */
   body header .services a {
     width: 32px;
     height: 32px;
     margin: 0 8px;
   }
-  /* line 28, ../../src/stylesheets/partials/_wide-mobile.scss */
+  /* line 28, ./src/stylesheets/partials/_wide-mobile.scss */
   body header .services a.email {
     background-image: url(/images/email-32x32.png);
   }
-  /* line 29, ../../src/stylesheets/partials/_wide-mobile.scss */
+  /* line 29, ./src/stylesheets/partials/_wide-mobile.scss */
   body header .services a.facebook {
     background-image: url(/images/facebook-32x32.png);
   }
-  /* line 30, ../../src/stylesheets/partials/_wide-mobile.scss */
+  /* line 30, ./src/stylesheets/partials/_wide-mobile.scss */
   body header .services a.linkedin {
     background-image: url(/images/linkedin-32x32.png);
   }
-  /* line 31, ../../src/stylesheets/partials/_wide-mobile.scss */
+  /* line 31, ./src/stylesheets/partials/_wide-mobile.scss */
   body header .services a.twitter {
     background-image: url(/images/twitter-32x32.png);
   }
-  /* line 39, ../../src/stylesheets/partials/_wide-mobile.scss */
+  /* line 39, ./src/stylesheets/partials/_wide-mobile.scss */
   body #main section .info .item .thumb {
     float: none;
     margin: 0 auto 15px;
     width: 434px;
     height: 242px;
   }
-  /* line 44, ../../src/stylesheets/partials/_wide-mobile.scss */
+  /* line 44, ./src/stylesheets/partials/_wide-mobile.scss */
   body #main section .info .item .thumb img {
     max-width: 414px;
     max-height: 222px;
   }
-  /* line 49, ../../src/stylesheets/partials/_wide-mobile.scss */
+  /* line 49, ./src/stylesheets/partials/_wide-mobile.scss */
   body #main section .info .item p {
     float: none;
     width: 436px;
@@ -505,38 +494,37 @@ body #main section .info .item .thumb img {
     margin-bottom: 24px;
   }
 }
-
 /* Retina media query.
    Overrides styles for devices with a
    device-pixel-ratio of 2+, such as iPhone 4.  */
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-  /* line 8, ../../src/stylesheets/partials/_high-px-ratio.scss */
+  /* line 8, ./src/stylesheets/partials/_high-px-ratio.scss */
   body {
     -moz-background-size: 127px 127px;
     -webkit-background-size: 127px 127px;
     -o-background-size: 127px 127px;
     background-size: 127px 127px;
   }
-  /* line 12, ../../src/stylesheets/partials/_high-px-ratio.scss */
+  /* line 12, ./src/stylesheets/partials/_high-px-ratio.scss */
   body header .services a {
     -moz-background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 14, ../../src/stylesheets/partials/_high-px-ratio.scss */
+  /* line 14, ./src/stylesheets/partials/_high-px-ratio.scss */
   body header .services a.email {
     background-image: url(/images/email-48x48.png);
   }
-  /* line 15, ../../src/stylesheets/partials/_high-px-ratio.scss */
+  /* line 15, ./src/stylesheets/partials/_high-px-ratio.scss */
   body header .services a.facebook {
     background-image: url(/images/facebook-48x48.png);
   }
-  /* line 16, ../../src/stylesheets/partials/_high-px-ratio.scss */
+  /* line 16, ./src/stylesheets/partials/_high-px-ratio.scss */
   body header .services a.linkedin {
     background-image: url(/images/linkedin-48x48.png);
   }
-  /* line 17, ../../src/stylesheets/partials/_high-px-ratio.scss */
+  /* line 17, ./src/stylesheets/partials/_high-px-ratio.scss */
   body header .services a.twitter {
     background-image: url(/images/twitter-48x48.png);
   }
