@@ -10,6 +10,7 @@ GEM
     haml (3.1.0)
     rack (1.2.2)
     rake (0.8.7)
+    rb-fsevent (0.4.0)
     sass (3.1.0)
     staticmatic (0.11.1)
       compass (>= 0.10.0)
@@ -24,5 +25,6 @@ DEPENDENCIES
   fssm
   haml (= 3.1)
   rake
+  rb-fsevent
   sass (= 3.1)
   staticmatic (= 0.11.1)

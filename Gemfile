@@ -6,3 +6,4 @@ gem 'sass', "3.1"
 gem 'compass'
 gem 'fssm'
 gem 'rake'
+gem 'rb-fsevent'
