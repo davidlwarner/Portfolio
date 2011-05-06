@@ -6,8 +6,11 @@ GEM
       chunky_png (~> 1.1)
       fssm (>= 0.2.7)
       sass (~> 3.1)
+    css_parser (1.1.9)
     fssm (0.2.7)
     haml (3.1.0)
+    oily_png (1.0.0)
+      chunky_png (~> 1.0)
     rack (1.2.2)
     rake (0.8.7)
     rb-fsevent (0.4.0)
@@ -22,8 +25,10 @@ PLATFORMS
 
 DEPENDENCIES
   compass
+  css_parser
   fssm
   haml (= 3.1)
+  oily_png
   rake
   rb-fsevent
   sass (= 3.1)

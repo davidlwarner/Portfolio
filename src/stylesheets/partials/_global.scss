@@ -20,106 +20,37 @@ small {
   @extend .small;
 }
 
-
-body {
-  background: rgb(232,232,232);
-  color: rgb(60,60,60);
-
-  // Stops Mobile Safari from auto-adjusting font-sizes
-  -webkit-text-size-adjust: 100%;
-}
-
-
 // Selection colors (easy to forget)
 @include selection-color(unquote("rgb(255,255,158)"));
 
-$light-bg: #ffd;
-$bgcolor: #ffc;
-
 body {
-  header {
-    width: 934px;
-    margin: 24px auto;
-    @include clearfix;
-    h1 {
+  margin: 0 auto;
+}
+
+@import "services/*.png";
+@include all-services-sprites;
+
+header {
+  p {
+    clear: left;
+  }
+  #services {
+    a {
+      display: block;
       float: left;
-    }
-    .services {
-      float: right;
-      a {
-        @include inline-block;
-        margin-left: 4px;
-        width: 24px;
-        height: 24px;
-        text-indent: -9999px;
-        &.email     { background-image: url(/images/email-24x24.png); }
-        &.facebook  { background-image: url(/images/facebook-24x24.png); }
-        &.linkedin  { background-image: url(/images/linkedin-24x24.png); }
-        &.twitter   { background-image: url(/images/twitter-24x24.png); }
-      }
+      width: 24px;
+      height: 24px;
+      text-indent: -9999px;
+      margin-right: 10px;
     }
   }
-  #main {
-    background: $bgcolor;
-    color: black;
-    margin: 0 auto 48px;
-    padding: 0 18px;
-    overflow: hidden;
-    border: 1px solid rgba(0,0,0,0.25);
-    @include background-clip(padding-box);
-    @include border-radius(7px);
-    @include single-box-shadow(black, 1px, 1px, 5px, inset);
-    section {
-      @include clearfix;
-      h2 {
-        @extend .big;
-        background: rgba(0,0,0,0.85);
-        color: $light-bg;
-        margin: 0 -18px 0;
-        padding: 12px 18px;
-        @include single-box-shadow(black, 0, 0, 2px);
-        text-shadow: rgba(0,0,0,0.5)        -1px  0, 
-                     rgba(0,0,0,0.3)        0     -1px, 
-                     rgba(255,255,255,0.5)  0     1px, 
-                     rgba(0,0,0,0.3)        -1px  -2px;
-      }
-      .info {
-        padding-top: 24px;
-        h3 {
-          @extend .normal;
-          margin-bottom: 24px;
-        }
-        p.description {
-          margin-bottom: 24px;
-        }
-        .item {
-          @include clearfix;
-          p {
-            float: left;
-            @include column(4, true);
-          }
-          .thumb {
-            float: left;
-            margin-right: 24px;
-            width: 526px;
-            height: 295px;
-            border: 1px solid #ccc;
-            margin-bottom: 15px;
-            background: white;
-            @include single-box-shadow(#ccc, 0, 0, 5px, inset);
+}
 
-            @include display-box;
-            @include box-orient(horizontal);
-            @include box-pack(center);
-            @include box-align(center);
-
-            img {
-              max-width: 506px;
-              max-height: 275px;
-            }
-          }
-        }
-      }
+#projects {
+  section {
+    display: none;
+    &:first-child {
+      display: block;
     }
   }
 }

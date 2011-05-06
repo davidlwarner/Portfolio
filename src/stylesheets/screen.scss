@@ -1,11 +1,11 @@
-$less-grid-element: unquote("#main");
+$less-grid-element: unquote("body");
 
-@import "less/reset";
+@import "compass";
+@import "compass/reset";
+
 @import "less/framework";
-@import "less/typography";
 
-@import "compass/css3";
-
+@import "partials/typography";
 @import "partials/global";
 @import "partials/default";
 @import "partials/tablet";

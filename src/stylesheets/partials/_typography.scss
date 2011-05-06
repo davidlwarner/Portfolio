@@ -1,3 +1,7 @@
+.gigantic, .huge, .large, .bigger, .big {
+	text-rendering: optimizeLegibility;
+}
+
 .gigantic {
 	font-size: 110px;
 	line-height: 120px;
@@ -32,6 +36,7 @@
 
 body {
 	font: 16px/24px Georgia, serif;
+	-webkit-font-smoothing: antialiased
 }
 
 .small {

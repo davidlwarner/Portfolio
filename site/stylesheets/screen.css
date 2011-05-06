@@ -1,283 +1,221 @@
-/* line 7, ./src/stylesheets/less/_reset.scss */
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em,
-img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+/* line 17, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figure, figcaption, hgroup,
-menu, footer, header, nav, section, summary, time, mark, audio, video {
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-/* line 14, ./src/stylesheets/less/_reset.scss */
-article, aside, canvas, figure, figure img, figcaption, hgroup,
-footer, header, nav, section, audio, video {
+/* line 20, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 115, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 18, ./src/stylesheets/less/_reset.scss */
-a img {
-  border: 0;
+/* line 1, ../../src/stylesheets/partials/_typography.scss */
+.gigantic, .huge, h1, .large, h2, .bigger, h3, .big, h4 {
+  text-rendering: optimizeLegibility;
 }
 
-/* line 1, ./src/stylesheets/less/_typography.scss */
+/* line 5, ../../src/stylesheets/partials/_typography.scss */
 .gigantic {
   font-size: 110px;
   line-height: 120px;
   letter-spacing: -2px;
 }
 
-/* line 7, ./src/stylesheets/less/_typography.scss */
+/* line 11, ../../src/stylesheets/partials/_typography.scss */
 .huge, h1 {
   font-size: 68px;
   line-height: 72px;
   letter-spacing: -1px;
 }
 
-/* line 13, ./src/stylesheets/less/_typography.scss */
+/* line 17, ../../src/stylesheets/partials/_typography.scss */
 .large, h2 {
   font-size: 42px;
   line-height: 48px;
 }
 
-/* line 18, ./src/stylesheets/less/_typography.scss */
+/* line 22, ../../src/stylesheets/partials/_typography.scss */
 .bigger, h3 {
   font-size: 26px;
   line-height: 36px;
 }
 
-/* line 23, ./src/stylesheets/less/_typography.scss */
-.big, h4, body #main section h2 {
+/* line 27, ../../src/stylesheets/partials/_typography.scss */
+.big, h4 {
   font-size: 22px;
   line-height: 30px;
 }
 
-/* line 28, ./src/stylesheets/less/_typography.scss */
-.normal, body #main section .info h3 {
+/* line 32, ../../src/stylesheets/partials/_typography.scss */
+.normal {
   font-size: 16px;
   line-height: 24px;
 }
 
-/* line 33, ./src/stylesheets/less/_typography.scss */
+/* line 37, ../../src/stylesheets/partials/_typography.scss */
 body {
   font: 16px/24px Georgia, serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* line 37, ./src/stylesheets/less/_typography.scss */
+/* line 42, ../../src/stylesheets/partials/_typography.scss */
 .small, small {
   font-size: 13px;
   line-height: 18px;
 }
 
-/* line 24, ./src/stylesheets/partials/_global.scss */
-body {
-  background: #e8e8e8;
-  color: #3c3c3c;
-  -webkit-text-size-adjust: 100%;
-}
-
-/* line 34, ./src/stylesheets/less/_framework.scss */
+/* line 34, ../../src/stylesheets/less/_framework.scss */
 ::selection {
   background: rgb(255,255,158);
 }
 
-/* line 35, ./src/stylesheets/less/_framework.scss */
+/* line 35, ../../src/stylesheets/less/_framework.scss */
 ::-moz-selection {
   background: rgb(255,255,158);
 }
 
-/* line 36, ./src/stylesheets/less/_framework.scss */
+/* line 36, ../../src/stylesheets/less/_framework.scss */
 img::selection {
   background: transparent;
 }
 
-/* line 37, ./src/stylesheets/less/_framework.scss */
+/* line 37, ../../src/stylesheets/less/_framework.scss */
 img::-moz-selection {
   background: transparent;
 }
 
-/* line 38, ./src/stylesheets/less/_framework.scss */
+/* line 38, ../../src/stylesheets/less/_framework.scss */
 body {
   -webkit-tap-highlight-color: rgb(255,255,158);
 }
 
-/* line 40, ./src/stylesheets/partials/_global.scss */
-body header {
-  width: 934px;
-  margin: 24px auto;
-  zoom: 1;
-  display: block;
+/* line 26, ../../src/stylesheets/partials/_global.scss */
+body {
+  margin: 0 auto;
 }
-/* line 42, ./src/stylesheets/less/_framework.scss */
-body header:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
+
+/* line 43, services */
+.services-sprite, .services-email, .services-facebook, .services-linkedin, .services-twitter {
+  background: url('../images/services-d81cdae990.png') no-repeat;
 }
-/* line 44, ./src/stylesheets/partials/_global.scss */
-body header h1 {
+
+/* line 59, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.services-email {
+  background-position: 0 0;
+}
+
+/* line 59, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.services-facebook {
+  background-position: 0 -24px;
+}
+
+/* line 59, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.services-linkedin {
+  background-position: 0 -48px;
+}
+
+/* line 59, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.services-twitter {
+  background-position: 0 -72px;
+}
+
+/* line 34, ../../src/stylesheets/partials/_global.scss */
+header p {
+  clear: left;
+}
+/* line 38, ../../src/stylesheets/partials/_global.scss */
+header #services a {
+  display: block;
   float: left;
-}
-/* line 47, ./src/stylesheets/partials/_global.scss */
-body header .services {
-  float: right;
-}
-/* line 49, ./src/stylesheets/partials/_global.scss */
-body header .services a {
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  margin-left: 4px;
   width: 24px;
   height: 24px;
   text-indent: -9999px;
+  margin-right: 10px;
 }
-/* line 7, /Users/davidwarner/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-body header .services a {
-  *display: inline;
+
+/* line 50, ../../src/stylesheets/partials/_global.scss */
+#projects section {
+  display: none;
 }
-/* line 55, ./src/stylesheets/partials/_global.scss */
-body header .services a.email {
-  background-image: url(/images/email-24x24.png);
-}
-/* line 56, ./src/stylesheets/partials/_global.scss */
-body header .services a.facebook {
-  background-image: url(/images/facebook-24x24.png);
-}
-/* line 57, ./src/stylesheets/partials/_global.scss */
-body header .services a.linkedin {
-  background-image: url(/images/linkedin-24x24.png);
-}
-/* line 58, ./src/stylesheets/partials/_global.scss */
-body header .services a.twitter {
-  background-image: url(/images/twitter-24x24.png);
-}
-/* line 62, ./src/stylesheets/partials/_global.scss */
-body #main {
-  background: #ffffcc;
-  color: black;
-  margin: 0 auto 48px;
-  padding: 0 18px;
-  overflow: hidden;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding;
-  -o-background-clip: padding-box;
-  -ms-background-clip: padding-box;
-  -khtml-background-clip: padding-box;
-  background-clip: padding-box;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  -o-border-radius: 7px;
-  -ms-border-radius: 7px;
-  -khtml-border-radius: 7px;
-  border-radius: 7px;
-  -moz-box-shadow: 1px 1px 5px inset black;
-  -webkit-box-shadow: 1px 1px 5px inset black;
-  -o-box-shadow: 1px 1px 5px inset black;
-  box-shadow: 1px 1px 5px inset black;
-}
-/* line 72, ./src/stylesheets/partials/_global.scss */
-body #main section {
-  zoom: 1;
+/* line 52, ../../src/stylesheets/partials/_global.scss */
+#projects section:first-child {
   display: block;
-}
-/* line 42, ./src/stylesheets/less/_framework.scss */
-body #main section:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-/* line 74, ./src/stylesheets/partials/_global.scss */
-body #main section h2 {
-  background: rgba(0, 0, 0, 0.85);
-  color: #ffffdd;
-  margin: 0 -18px 0;
-  padding: 12px 18px;
-  -moz-box-shadow: 0 0 2px black;
-  -webkit-box-shadow: 0 0 2px black;
-  -o-box-shadow: 0 0 2px black;
-  box-shadow: 0 0 2px black;
-  text-shadow: rgba(0, 0, 0, 0.5) -1px 0, rgba(0, 0, 0, 0.3) 0 -1px, rgba(255, 255, 255, 0.5) 0 1px, rgba(0, 0, 0, 0.3) -1px -2px;
-}
-/* line 86, ./src/stylesheets/partials/_global.scss */
-body #main section .info {
-  padding-top: 24px;
-}
-/* line 88, ./src/stylesheets/partials/_global.scss */
-body #main section .info h3 {
-  margin-bottom: 24px;
-}
-/* line 92, ./src/stylesheets/partials/_global.scss */
-body #main section .info p.description {
-  margin-bottom: 24px;
-}
-/* line 95, ./src/stylesheets/partials/_global.scss */
-body #main section .info .item {
-  zoom: 1;
-  display: block;
-}
-/* line 42, ./src/stylesheets/less/_framework.scss */
-body #main section .info .item:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-/* line 97, ./src/stylesheets/partials/_global.scss */
-body #main section .info .item p {
-  float: left;
-  width: 344px;
-}
-/* line 101, ./src/stylesheets/partials/_global.scss */
-body #main section .info .item .thumb {
-  float: left;
-  margin-right: 24px;
-  width: 526px;
-  height: 295px;
-  border: 1px solid #ccc;
-  margin-bottom: 15px;
-  background: white;
-  -moz-box-shadow: 0 0 5px inset #cccccc;
-  -webkit-box-shadow: 0 0 5px inset #cccccc;
-  -o-box-shadow: 0 0 5px inset #cccccc;
-  box-shadow: 0 0 5px inset #cccccc;
-  display: -moz-box;
-  display: -webkit-box;
-  display: box;
-  -moz-box-orient: horizontal;
-  -webkit-box-orient: horizontal;
-  box-orient: horizontal;
-  -moz-box-pack: center;
-  -webkit-box-pack: center;
-  box-pack: center;
-  -moz-box-align: center;
-  -webkit-box-align: center;
-  box-align: center;
-}
-/* line 116, ./src/stylesheets/partials/_global.scss */
-body #main section .info .item .thumb img {
-  max-width: 506px;
-  max-height: 275px;
 }
 
 /* Default Layout: 992px.
    Gutters: 24px.
    Outer margins: 48px.
    Leftover space for scrollbars @1024px: 32px.  */
-/* line 6, ./src/stylesheets/partials/_default.scss */
-#main {
+/* line 6, ../../src/stylesheets/partials/_default.scss */
+body {
   width: 896px;
   padding: 72px 48px 84px;
+}
+/* line 9, ../../src/stylesheets/partials/_default.scss */
+body header {
+  width: 344px;
+  margin-right: 24px;
+  float: left;
+}
+/* line 13, ../../src/stylesheets/partials/_default.scss */
+body #main {
+  width: 528px;
+  float: left;
 }
 
 /* Tablet Layout: 768px.
@@ -285,53 +223,10 @@ body #main section .info .item .thumb img {
    Outer margins: 28px.
    Inherits styles from: Default Layout.  */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 7, ./src/stylesheets/partials/_tablet.scss */
-  #main {
+  /* line 7, ../../src/stylesheets/partials/_tablet.scss */
+  body {
     width: 712px;
     padding: 48px 28px 60px;
-  }
-
-  /* line 11, ./src/stylesheets/partials/_tablet.scss */
-  body header {
-    width: 750px;
-  }
-  /* line 13, ./src/stylesheets/partials/_tablet.scss */
-  body header h1 {
-    font-size: 42px;
-    line-height: 48px;
-  }
-  /* line 18, ./src/stylesheets/partials/_tablet.scss */
-  body header .services a {
-    width: 32px;
-    height: 32px;
-  }
-  /* line 21, ./src/stylesheets/partials/_tablet.scss */
-  body header .services a.email {
-    background-image: url(/images/email-32x32.png);
-  }
-  /* line 22, ./src/stylesheets/partials/_tablet.scss */
-  body header .services a.facebook {
-    background-image: url(/images/facebook-32x32.png);
-  }
-  /* line 23, ./src/stylesheets/partials/_tablet.scss */
-  body header .services a.linkedin {
-    background-image: url(/images/linkedin-32x32.png);
-  }
-  /* line 24, ./src/stylesheets/partials/_tablet.scss */
-  body header .services a.twitter {
-    background-image: url(/images/twitter-32x32.png);
-  }
-  /* line 32, ./src/stylesheets/partials/_tablet.scss */
-  body #main section .info .item .thumb {
-    float: none;
-    margin: 0 auto 15px;
-  }
-  /* line 36, ./src/stylesheets/partials/_tablet.scss */
-  body #main section .info .item p {
-    float: none;
-    width: 528px;
-    margin: 0 auto 24px;
-    margin-bottom: 24px;
   }
 }
 /* Mobile Layout: 320px.
@@ -339,87 +234,10 @@ body #main section .info .item .thumb img {
    Outer margins: 34px.
    Inherits styles from: Default Layout.  */
 @media only screen and (max-width: 767px) {
-  /* line 7, ./src/stylesheets/partials/_mobile.scss */
-  #main {
+  /* line 7, ../../src/stylesheets/partials/_mobile.scss */
+  body {
     width: 252px;
     padding: 48px 34px 60px;
-  }
-
-  /* line 11, ./src/stylesheets/partials/_mobile.scss */
-  body header {
-    width: auto;
-    margin: 12px auto;
-  }
-  /* line 14, ./src/stylesheets/partials/_mobile.scss */
-  body header h1 {
-    font-size: 26px;
-    line-height: 36px;
-  }
-  /* line 18, ./src/stylesheets/partials/_mobile.scss */
-  body header h1, body header .services {
-    float: none;
-    text-align: center;
-  }
-  /* line 22, ./src/stylesheets/partials/_mobile.scss */
-  body header .services {
-    margin: 8px 0;
-  }
-  /* line 24, ./src/stylesheets/partials/_mobile.scss */
-  body header .services a {
-    width: 32px;
-    height: 32px;
-    margin: 0 8px;
-  }
-  /* line 28, ./src/stylesheets/partials/_mobile.scss */
-  body header .services a.email {
-    background-image: url(/images/email-32x32.png);
-  }
-  /* line 29, ./src/stylesheets/partials/_mobile.scss */
-  body header .services a.facebook {
-    background-image: url(/images/facebook-32x32.png);
-  }
-  /* line 30, ./src/stylesheets/partials/_mobile.scss */
-  body header .services a.linkedin {
-    background-image: url(/images/linkedin-32x32.png);
-  }
-  /* line 31, ./src/stylesheets/partials/_mobile.scss */
-  body header .services a.twitter {
-    background-image: url(/images/twitter-32x32.png);
-  }
-  /* line 37, ./src/stylesheets/partials/_mobile.scss */
-  body #main section h2 {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  /* line 42, ./src/stylesheets/partials/_mobile.scss */
-  body #main section .info h3 {
-    font-size: 13px;
-    line-height: 18px;
-    margin-bottom: 12px;
-  }
-  /* line 47, ./src/stylesheets/partials/_mobile.scss */
-  body #main section .info p.description {
-    margin-bottom: 12px;
-  }
-  /* line 51, ./src/stylesheets/partials/_mobile.scss */
-  body #main section .info .item .thumb {
-    float: none;
-    margin: 0 auto 15px;
-    width: 250px;
-    height: 140px;
-  }
-  /* line 56, ./src/stylesheets/partials/_mobile.scss */
-  body #main section .info .item .thumb img {
-    max-width: 240px;
-    max-height: 130px;
-  }
-  /* line 61, ./src/stylesheets/partials/_mobile.scss */
-  body #main section .info .item p {
-    float: none;
-    width: 252px;
-    font-size: 13px;
-    line-height: 18px;
-    margin: 0 auto 12px;
   }
 }
 /* Wide Mobile Layout: 480px.
@@ -427,105 +245,12 @@ body #main section .info .item .thumb img {
    Outer margins: 22px.
    Inherits styles from: Default Layout, Mobile Layout.  */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 7, ./src/stylesheets/partials/_wide-mobile.scss */
-  #main {
+  /* line 7, ../../src/stylesheets/partials/_wide-mobile.scss */
+  body {
     width: 436px;
     padding: 36px 22px 48px;
-  }
-
-  /* line 11, ./src/stylesheets/partials/_wide-mobile.scss */
-  body header {
-    width: auto;
-    margin: 12px auto;
-  }
-  /* line 14, ./src/stylesheets/partials/_wide-mobile.scss */
-  body header h1 {
-    font-size: 42px;
-    line-height: 48px;
-  }
-  /* line 18, ./src/stylesheets/partials/_wide-mobile.scss */
-  body header h1, body header .services {
-    float: none;
-    text-align: center;
-  }
-  /* line 22, ./src/stylesheets/partials/_wide-mobile.scss */
-  body header .services {
-    margin: 8px 0;
-  }
-  /* line 24, ./src/stylesheets/partials/_wide-mobile.scss */
-  body header .services a {
-    width: 32px;
-    height: 32px;
-    margin: 0 8px;
-  }
-  /* line 28, ./src/stylesheets/partials/_wide-mobile.scss */
-  body header .services a.email {
-    background-image: url(/images/email-32x32.png);
-  }
-  /* line 29, ./src/stylesheets/partials/_wide-mobile.scss */
-  body header .services a.facebook {
-    background-image: url(/images/facebook-32x32.png);
-  }
-  /* line 30, ./src/stylesheets/partials/_wide-mobile.scss */
-  body header .services a.linkedin {
-    background-image: url(/images/linkedin-32x32.png);
-  }
-  /* line 31, ./src/stylesheets/partials/_wide-mobile.scss */
-  body header .services a.twitter {
-    background-image: url(/images/twitter-32x32.png);
-  }
-  /* line 39, ./src/stylesheets/partials/_wide-mobile.scss */
-  body #main section .info .item .thumb {
-    float: none;
-    margin: 0 auto 15px;
-    width: 434px;
-    height: 242px;
-  }
-  /* line 44, ./src/stylesheets/partials/_wide-mobile.scss */
-  body #main section .info .item .thumb img {
-    max-width: 414px;
-    max-height: 222px;
-  }
-  /* line 49, ./src/stylesheets/partials/_wide-mobile.scss */
-  body #main section .info .item p {
-    float: none;
-    width: 436px;
-    margin: 0 auto 24px;
-    margin-bottom: 24px;
   }
 }
 /* Retina media query.
    Overrides styles for devices with a
    device-pixel-ratio of 2+, such as iPhone 4.  */
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-  /* line 8, ./src/stylesheets/partials/_high-px-ratio.scss */
-  body {
-    -moz-background-size: 127px 127px;
-    -webkit-background-size: 127px 127px;
-    -o-background-size: 127px 127px;
-    background-size: 127px 127px;
-  }
-  /* line 12, ./src/stylesheets/partials/_high-px-ratio.scss */
-  body header .services a {
-    -moz-background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;
-  }
-  /* line 14, ./src/stylesheets/partials/_high-px-ratio.scss */
-  body header .services a.email {
-    background-image: url(/images/email-48x48.png);
-  }
-  /* line 15, ./src/stylesheets/partials/_high-px-ratio.scss */
-  body header .services a.facebook {
-    background-image: url(/images/facebook-48x48.png);
-  }
-  /* line 16, ./src/stylesheets/partials/_high-px-ratio.scss */
-  body header .services a.linkedin {
-    background-image: url(/images/linkedin-48x48.png);
-  }
-  /* line 17, ./src/stylesheets/partials/_high-px-ratio.scss */
-  body header .services a.twitter {
-    background-image: url(/images/twitter-48x48.png);
-  }
-}

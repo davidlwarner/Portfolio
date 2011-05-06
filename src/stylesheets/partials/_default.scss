@@ -4,5 +4,14 @@
    Leftover space for scrollbars @1024px: 32px.  */
 
 #{$less-grid-element} {
-  @include grid(10)
+  @include grid(10);
+  
+  header {
+    @include column(4);
+    float: left;
+  }
+  #main {
+    @include column(6, true);
+    float: left;
+  }
 }
