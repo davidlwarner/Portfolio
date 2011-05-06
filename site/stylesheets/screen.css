@@ -1,4 +1,4 @@
-/* line 17, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, /Users/davidwarner/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,131 +20,131 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 20, /Users/davidwarner/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
 }
 
-/* line 22, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, /Users/davidwarner/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, /Users/davidwarner/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, /Users/davidwarner/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, /Users/davidwarner/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, /Users/davidwarner/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, /Users/davidwarner/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 115, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 115, /Users/davidwarner/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 1, ../../src/stylesheets/partials/_typography.scss */
+/* line 1, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_typography.scss */
 .gigantic, .huge, h1, .large, h2, .bigger, h3, .big, h4 {
   text-rendering: optimizeLegibility;
 }
 
-/* line 5, ../../src/stylesheets/partials/_typography.scss */
+/* line 5, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_typography.scss */
 .gigantic {
   font-size: 110px;
   line-height: 120px;
   letter-spacing: -2px;
 }
 
-/* line 11, ../../src/stylesheets/partials/_typography.scss */
+/* line 11, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_typography.scss */
 .huge, h1 {
   font-size: 68px;
   line-height: 72px;
   letter-spacing: -1px;
 }
 
-/* line 17, ../../src/stylesheets/partials/_typography.scss */
+/* line 17, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_typography.scss */
 .large, h2 {
   font-size: 42px;
   line-height: 48px;
 }
 
-/* line 22, ../../src/stylesheets/partials/_typography.scss */
+/* line 22, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_typography.scss */
 .bigger, h3 {
   font-size: 26px;
   line-height: 36px;
 }
 
-/* line 27, ../../src/stylesheets/partials/_typography.scss */
+/* line 27, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_typography.scss */
 .big, h4 {
   font-size: 22px;
   line-height: 30px;
 }
 
-/* line 32, ../../src/stylesheets/partials/_typography.scss */
+/* line 32, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_typography.scss */
 .normal {
   font-size: 16px;
   line-height: 24px;
 }
 
-/* line 37, ../../src/stylesheets/partials/_typography.scss */
+/* line 37, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_typography.scss */
 body {
   font: 16px/24px Georgia, serif;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 42, ../../src/stylesheets/partials/_typography.scss */
+/* line 42, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_typography.scss */
 .small, small {
   font-size: 13px;
   line-height: 18px;
 }
 
-/* line 34, ../../src/stylesheets/less/_framework.scss */
+/* line 34, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/less/_framework.scss */
 ::selection {
   background: rgb(255,255,158);
 }
 
-/* line 35, ../../src/stylesheets/less/_framework.scss */
+/* line 35, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/less/_framework.scss */
 ::-moz-selection {
   background: rgb(255,255,158);
 }
 
-/* line 36, ../../src/stylesheets/less/_framework.scss */
+/* line 36, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/less/_framework.scss */
 img::selection {
   background: transparent;
 }
 
-/* line 37, ../../src/stylesheets/less/_framework.scss */
+/* line 37, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/less/_framework.scss */
 img::-moz-selection {
   background: transparent;
 }
 
-/* line 38, ../../src/stylesheets/less/_framework.scss */
+/* line 38, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/less/_framework.scss */
 body {
   -webkit-tap-highlight-color: rgb(255,255,158);
 }
 
-/* line 26, ../../src/stylesheets/partials/_global.scss */
+/* line 26, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 body {
   margin: 0 auto;
 }
@@ -154,31 +154,31 @@ body {
   background: url('../images/services-d81cdae990.png') no-repeat;
 }
 
-/* line 59, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 59, /Users/davidwarner/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .services-email {
   background-position: 0 0;
 }
 
-/* line 59, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 59, /Users/davidwarner/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .services-facebook {
   background-position: 0 -24px;
 }
 
-/* line 59, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 59, /Users/davidwarner/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .services-linkedin {
   background-position: 0 -48px;
 }
 
-/* line 59, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 59, /Users/davidwarner/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .services-twitter {
   background-position: 0 -72px;
 }
 
-/* line 34, ../../src/stylesheets/partials/_global.scss */
+/* line 34, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header p {
   clear: left;
 }
-/* line 38, ../../src/stylesheets/partials/_global.scss */
+/* line 38, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header #services a {
   display: block;
   float: left;
@@ -188,31 +188,22 @@ header #services a {
   margin-right: 10px;
 }
 
-/* line 50, ../../src/stylesheets/partials/_global.scss */
-#projects section {
-  display: none;
-}
-/* line 52, ../../src/stylesheets/partials/_global.scss */
-#projects section:first-child {
-  display: block;
-}
-
 /* Default Layout: 992px.
    Gutters: 24px.
    Outer margins: 48px.
    Leftover space for scrollbars @1024px: 32px.  */
-/* line 6, ../../src/stylesheets/partials/_default.scss */
+/* line 6, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_default.scss */
 body {
   width: 896px;
   padding: 72px 48px 84px;
 }
-/* line 9, ../../src/stylesheets/partials/_default.scss */
+/* line 9, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_default.scss */
 body header {
   width: 344px;
   margin-right: 24px;
   float: left;
 }
-/* line 13, ../../src/stylesheets/partials/_default.scss */
+/* line 13, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_default.scss */
 body #main {
   width: 528px;
   float: left;
@@ -223,7 +214,7 @@ body #main {
    Outer margins: 28px.
    Inherits styles from: Default Layout.  */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 7, ../../src/stylesheets/partials/_tablet.scss */
+  /* line 7, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_tablet.scss */
   body {
     width: 712px;
     padding: 48px 28px 60px;
@@ -234,7 +225,7 @@ body #main {
    Outer margins: 34px.
    Inherits styles from: Default Layout.  */
 @media only screen and (max-width: 767px) {
-  /* line 7, ../../src/stylesheets/partials/_mobile.scss */
+  /* line 7, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_mobile.scss */
   body {
     width: 252px;
     padding: 48px 34px 60px;
@@ -245,7 +236,7 @@ body #main {
    Outer margins: 22px.
    Inherits styles from: Default Layout, Mobile Layout.  */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 7, ../../src/stylesheets/partials/_wide-mobile.scss */
+  /* line 7, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_wide-mobile.scss */
   body {
     width: 436px;
     padding: 36px 22px 48px;
