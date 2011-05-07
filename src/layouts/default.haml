@@ -1,11 +1,33 @@
 !!! 5
-%html
+%html.no-js{ :lang => "en" }
   %head
     %meta{ :charset => "utf-8" }
-    %title David L Warner — Designer
+    %meta{ :content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible" }
+
+    %title David L. Warner — UX Designer & Developer
+
+    %meta{ :name => "description", :content => "David L. Warner — UX Designer & Developer" }
+    %meta{ :author => "David L. Warner" }
+
     /[if lt IE 9]
       %script{ :src => "http://html5shim.googlecode.com/svn/trunk/html5.js" }
+
     = stylesheets
+
     %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1" }
-  %body{ :lang => "en" }
+
+    %link{ :rel => "shortcut icon", :href => "/favicon.ico" }
+    %link{ :rel => "apple-touch-icon", :href => "/apple-touch-icon.png" }
+
+  %body
+
     = yield
+
+    %script{ :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" }
+    %script
+      !window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.5.1.min.js"%3E%3C/script%3E'))
+
+      var _gaq=[['_setAccount','UA-21171547-1'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
