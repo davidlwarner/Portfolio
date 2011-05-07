@@ -23,9 +23,13 @@
       .info
         %h4 Interaction Design, Graphic Design, HTML, CSS
         %p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        %nav
-          = link_to "Previous", "#", :class => "previous"
-          = link_to "Next",     "#", :class => "next"
+        %nav.next-prev
+          = link_to "◀", "#", :class => "prev"
+          = link_to "▶", "#", :class => "next"
+        / %nav.pages
+        /   = link_to "⚫", "#"
+        /   = link_to "⚪", "#"
+        /   = link_to "⚪", "#"
         .thumbs
           .item
             .thumb= img "http://placekitten.com/g/528/297"
@@ -42,9 +46,9 @@
       .info
         %h4 Interaction Design, Graphic Design, HTML, CSS, Usability Studies
         %p.description I was the lead interaction and graphic designer for Crowdcast’s enterprise prediction market. I led a redesign of the product to make it easier to understand and use for both administrators and regular users.
-        %nav
-          = link_to "Previous", "#", :class => "previous"
-          = link_to "Next",     "#", :class => "next"
+        %nav.next-prev
+          = link_to "◀", "#", :class => "prev"
+          = link_to "▶", "#", :class => "next"
         .thumbs
           .item
             .thumb= img "crowdcast1.png"
@@ -64,9 +68,9 @@
       .info
         %h4 Interaction Design, Graphic Design, HTML, CSS
         %p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        %nav
-          = link_to "Previous", "#", :class => "previous"
-          = link_to "Next",     "#", :class => "next"
+        %nav.next-prev
+          = link_to "◀", "#", :class => "prev"
+          = link_to "▶", "#", :class => "next"
         .thumbs
           .item
             .thumb= img "http://placekitten.com/528/297"
