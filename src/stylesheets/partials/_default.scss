@@ -9,6 +9,10 @@
   header {
     @include column(4);
     float: left;
+    text-align: center;
+    #about-me {
+      text-align: left;
+    }
   }
   #main {
     @include column(6, true);

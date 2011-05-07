@@ -36,17 +36,40 @@ header {
   }
   #services {
     a {
-      display: block;
-      float: left;
       width: 24px;
       height: 24px;
       text-indent: -9999px;
-      margin-right: 10px;
+      @include inline-block;
+    }
+  }
+}
+
+nav#work {
+  a {
+    width: 33.3333%;
+    display: block;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 0;
+    background: yellow;
+    &:hover {
+      background: red;
+    }
+    &.on {
+      background: green;
+      cursor: default;
     }
   }
 }
 
 #projects {
   section {
+    .thumbs {
+      @include column(6, true);
+      overflow: hidden;
+      border: 3px solid red;
+      border-width: 3px 0;
+    }
   }
 }

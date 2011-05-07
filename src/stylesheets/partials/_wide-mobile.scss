@@ -5,6 +5,19 @@
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   #{$less-grid-element} {
-    @include grid(5)
+    @include grid(5);
+    
+    header, #main {
+      @include column(5);
+      float: none;
+    }
+    
+    #projects {
+      section {
+        .thumbs, .thumbs img {
+          @include column(5, true);
+        }
+      }
+    }
   }
 }
