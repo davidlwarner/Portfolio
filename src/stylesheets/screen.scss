@@ -5,6 +5,7 @@ $less-grid-element: unquote("body");
 
 @import "less/framework";
 
+@import "partials/slider";
 @import "partials/typography";
 @import "partials/global";
 @import "partials/default";

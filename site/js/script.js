@@ -1,20 +1,12 @@
 $(function() {
-  $(".thumbs").each(function (t) {
-    $(this)
-      .before("<nav class='pager'></nav>")
-      .cycle({
-        fx: 'scrollHorz',
-        speed:  'fast',
-        timeout: 0,
-        next: $(this).siblings('nav.next-prev').children('.next'),
-        prev: $(this).siblings('nav.next-prev').children('.prev'),
-        pager: $(this).siblings('nav.pager'),
-        pagerAnchorBuilder: function(idx, slide) { 
-          return '<a href="#">⚫</a>';
-        }
-      });
-      // .scrollpane();
+  $("#coda-slider-1").codaSlider({
+    dynamicArrowLeftText: "◀",
+    dynamicArrowRightText: "▶"
   });
+
+  // $(".thumbs").each(function (t) {
+  //   $(this)
+  // });
 });
 
 //   = link_to "⚫", "#"

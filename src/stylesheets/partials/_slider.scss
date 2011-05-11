@@ -1,0 +1,78 @@
+.coda-slider-wrapper {
+  clear: both;
+  overflow: auto;
+  position: relative;
+}
+.coda-slider {
+  background: #ebebeb;
+  width: 528px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  .panel-container {
+    position: relative;
+  }
+  .panel-wrapper {
+    padding: 20px;
+  }
+  .panel {
+    width: 528px;
+    display: block;
+    float: left;
+  }
+  p.loading {
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+.coda-nav-left,
+.coda-nav-right {
+  float: left;
+  z-index: 5;
+  a {
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    width: 100px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+.coda-nav-left {
+  position: relative;
+}
+.coda-nav-right {
+  position: absolute;
+  right: 0;
+}
+
+.coda-nav {
+  position: absolute;
+  width: 528px;
+  ul {
+    clear: both;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+    li {
+      display: inline;
+      a {
+        background: #000;
+        color: #fff;
+        display: block;
+        float: left;
+        margin-right: 1px;
+        padding: 3px 6px;
+        text-decoration: none;
+        &.current {
+          background: #39c;
+        }
+      }
+    }
+  }
+}
+	
+/* Use this to keep the slider content contained in a box even when JavaScript is disabled */
+.coda-slider-no-js .coda-slider { height: 200px; overflow: auto !important; padding-right: 20px }
