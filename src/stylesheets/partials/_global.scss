@@ -20,6 +20,10 @@ small {
   @extend .small;
 }
 
+p {
+  margin-bottom: 1em;
+}
+
 // Selection colors (easy to forget)
 @include selection-color(unquote("rgb(255,255,158)"));
 
@@ -68,7 +72,7 @@ nav#work {
 
 #projects {
   section {
-    display: none;
+/*    display: none;*/
     &:first-child {
       display: block;
     }

@@ -1,8 +1,15 @@
-$(function() {
-  $("#coda-slider-1").codaSlider({
-    dynamicArrowLeftText: "◀",
-    dynamicArrowRightText: "▶"
+$(window).load(function() {
+  $(".coda-slider").each(function (t) {
+    $(this).codaSlider({
+      dynamicArrowLeftText: "◀",
+      dynamicArrowRightText: "▶"
+    });
   });
+
+  // $("#coda-slider-1").codaSlider({
+  //   dynamicArrowLeftText: "◀",
+  //   dynamicArrowRightText: "▶"
+  // });
 
   // $(".thumbs").each(function (t) {
   //   $(this)

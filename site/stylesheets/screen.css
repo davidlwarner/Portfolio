@@ -222,6 +222,11 @@ body {
   line-height: 18px;
 }
 
+/* line 23, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+p {
+  margin-bottom: 1em;
+}
+
 /* line 34, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/less/_framework.scss */
 ::selection {
   background: rgb(255,255,158);
@@ -247,7 +252,7 @@ body {
   -webkit-tap-highlight-color: rgb(255,255,158);
 }
 
-/* line 26, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 30, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 body {
   margin: 0 auto;
   *zoom: 1;
@@ -287,16 +292,16 @@ body:after {
   background-position: 0 -72px;
 }
 
-/* line 35, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 39, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header p {
   clear: left;
 }
-/* line 38, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 42, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header #services {
   letter-spacing: 10px;
   margin: 1em 0;
 }
-/* line 41, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 45, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header #services a {
   width: 24px;
   height: 24px;
@@ -312,7 +317,7 @@ header #services a {
   *display: inline;
 }
 
-/* line 51, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 55, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 nav#work a {
   width: 33.3333%;
   display: block;
@@ -322,51 +327,51 @@ nav#work a {
   padding: 5px 0;
   background: yellow;
 }
-/* line 59, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 63, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 nav#work a:hover {
   background: red;
 }
-/* line 62, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 66, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 nav#work a.on {
   background: green;
   cursor: default;
 }
 
-/* line 70, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 74, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 #projects section {
-  display: none;
+  /*    display: none;*/
 }
-/* line 72, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 76, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 #projects section:first-child {
   display: block;
 }
-/* line 76, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 80, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 #projects section nav a {
   text-decoration: none;
   font-size: 24px;
   color: #999;
 }
-/* line 82, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 86, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 #projects section nav.next-prev .prev {
   float: left;
 }
-/* line 85, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 89, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 #projects section nav.next-prev .next {
   float: right;
 }
-/* line 89, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 93, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 #projects section nav.pager {
   text-align: center;
 }
-/* line 91, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 95, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 #projects section nav.pager a {
   color: #ccc;
 }
-/* line 93, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 97, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 #projects section nav.pager a.activeSlide {
   color: #999;
 }
-/* line 99, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 103, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 #projects section .thumbs {
   width: 528px;
   overflow: hidden;
