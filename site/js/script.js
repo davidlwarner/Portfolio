@@ -2,40 +2,35 @@ $(window).load(function() {
   $(".coda-slider").each(function (t) {
     $(this).codaSlider({
       dynamicArrowLeftText: "◀",
-      dynamicArrowRightText: "▶"
+      dynamicArrowRightText: "▶",
+      crossLinking: false
     });
   });
-
-  // $("#coda-slider-1").codaSlider({
-  //   dynamicArrowLeftText: "◀",
-  //   dynamicArrowRightText: "▶"
-  // });
-
-  // $(".thumbs").each(function (t) {
-  //   $(this)
-  // });
+  
+  $('nav#work').children().each(function (c) {
+    // Hide all but first
+    if (c == 0) {
+      currentProject = $(this).attr('href');
+    } else {
+      $($(this).attr('href')).hide();
+    }
+    
+    // Click handlers
+    $(this).click(function () {
+      clickId = $(this).attr('href');
+      if (clickId != currentProject) {
+        oldProject = currentProject;
+        currentProject = clickId;
+        $(oldProject).hide();
+        $(currentProject).show();
+        $('#projects').height($(currentProject).height());
+        console.log($(currentProject).height());
+        
+        // Update nav
+        $('nav#work a[href='+oldProject+']').removeClass('on');
+        $('nav#work a[href='+currentProject+']').addClass('on');
+      }
+      return false;
+    });
+  });
 });
-
-//   = link_to "⚫", "#"
-//   = link_to "⚪", "#"
-
-
-
-// $(function(){
-//   updateScroll();
-// });
-// 
-// function updateScroll() {
-//   $(".thumbs").each(function (t) {
-// 
-//     // Find the max height child for each pane
-//     var h = 0;
-//     $(this).children().each(function (c) {
-//       var this_h = $(this).height();
-//       h = (this_h > h) ? this_h : h;
-//     });
-// 
-//     // Set the height of each pane and turn on scrolling
-//     $(this).height(h).scrollpane();
-//   });
-// }
