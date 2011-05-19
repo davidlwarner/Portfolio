@@ -7,16 +7,18 @@ $(window).load(function() {
     });
   });
   
-  $('nav#work').children().each(function (c) {
+  $('nav#work').children().children().each(function (c) {
     // Hide all but first
+    anchor = $(this).children('a');
+
     if (c == 0) {
-      currentProject = $(this).attr('href');
+      currentProject = anchor.attr('href');
     } else {
-      $($(this).attr('href')).hide();
+      $(anchor.attr('href')).hide();
     }
     
     // Click handlers
-    $(this).click(function () {
+    anchor.click(function () {
       clickId = $(this).attr('href');
       if (clickId != currentProject) {
         oldProject = currentProject;

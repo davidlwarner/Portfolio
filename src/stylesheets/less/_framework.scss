@@ -12,7 +12,7 @@ $less-font-family: Arial, sans-serif !default;
 
 @mixin grid-padding($columns) {
   @if $columns == 10 {
-    padding: 72px 48px 84px;
+/*    padding: 72px 48px 84px;*/
   } @else if $columns == 8 {
     padding: 48px 28px 60px;
   } @else if $columns == 3 {
