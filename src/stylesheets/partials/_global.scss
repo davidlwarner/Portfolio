@@ -1,21 +1,3 @@
-// Global style definitions
-
-/*h1 {
-  @extend .huge;
-}
-
-h2 {
-  @extend .large;
-}
-
-h3 {
-  @extend .bigger;
-}
-
-h4 {
-  @extend .big;
-}
-*/
 small {
   @extend .small;
 }
@@ -27,8 +9,12 @@ p {
   }
 }
 
+a {
+  color: $blue;
+}
+
 // Selection colors (easy to forget)
-@include selection-color(unquote("rgb(255,255,158)"));
+@include selection-color($lighter-orange);
 
 
 html {
@@ -82,7 +68,6 @@ nav#work {
   @include background-image(linear-gradient(rgba($darker-red, 0.8),
                                             rgba($red, 0.8),
                                             rgba($red, 0.8)));
-
   height: 72px;
   ul {
     list-style: none;
@@ -113,29 +98,11 @@ nav#work {
 
 #projects {
   section {
-    nav {
-      a {
-        text-decoration: none;
-        font-size: 24px;
-        color: #999;
-      }
-      &.next-prev {
-        .prev {
-          float: left;
-        }
-        .next {
-          float: right;
-        }
-      }
-      &.pager {
-        text-align: center;
-        a {
-          color: #ccc;
-          &.activeSlide {
-            color: #999;
-          }
-        }
-      }
+    h3 {
+      font: bold 28px/24px $title-font;
+      letter-spacing: -1px;
+      margin-bottom: 24px;
+      color: #333;
     }
     .thumbs {
       @include column(6, true);

@@ -6,6 +6,8 @@
 #{$less-grid-element} {
   @include grid(10);
   
+  padding-bottom: 48px;
+  
   header {
     width: 296px;
     position: absolute;

@@ -3,8 +3,13 @@ $dark-gray: #222;
 /* http://colorschemedesigner.com/#0242iw0w0w0w0 */
 $red-hue: 3;
 $orange-hue: 39;
+$blue-hue: $orange-hue + 180;
+$green-hue: $red-hue + 180;
+/*
 $blue-hue: 220;
 $green-hue: 127;
+*/
+
 
 /* default scheme */
 $red: hsl($red-hue, 100, 50);
