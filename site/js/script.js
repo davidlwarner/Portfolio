@@ -25,8 +25,6 @@ $(window).load(function() {
         currentProject = clickId;
         $(oldProject).hide();
         $(currentProject).show();
-        $('#projects').height($(currentProject).height());
-        console.log($(currentProject).height());
         
         // Update nav
         $('nav#work a[href='+oldProject+']').removeClass('on');

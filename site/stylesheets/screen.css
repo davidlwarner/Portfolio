@@ -91,7 +91,7 @@ $green-hue: 127;
 }
 /* line 15, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_slider.scss */
 .coda-slider .panel-wrapper {
-  padding: 24px;
+  padding: 12px 24px 24px;
 }
 /* line 18, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_slider.scss */
 .coda-slider .panel {
