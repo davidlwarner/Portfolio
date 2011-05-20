@@ -3,6 +3,7 @@
   overflow: auto;
   position: relative;
   background: rgba($dark-orange, .5);
+  @include border-radius(4px);
 }
 .coda-slider {
   width: 528px;
