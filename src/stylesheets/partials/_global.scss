@@ -46,6 +46,7 @@ header {
   color: white;
   h1 {
     color: $orange;
+    @include text-shadow(rgba(black, .25) 0 0 4px);
     font: bold 34px/48px $title-font;
     text-transform: uppercase;
     margin-bottom: 24px;

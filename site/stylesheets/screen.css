@@ -352,61 +352,62 @@ header {
 /* line 47, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header h1 {
   color: #ffa600;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 0 4px;
   font: bold 34px/48px "Josefin Sans", verdana, sans-serif;
   text-transform: uppercase;
   margin-bottom: 24px;
   /* kerning! */
 }
-/* line 53, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 54, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header h1 .char2 {
   margin-left: -4px;
 }
-/* line 54, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 55, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header h1 .char3 {
   margin-left: -7px;
 }
-/* line 55, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 56, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header h1 .char4 {
   margin-left: -2px;
 }
-/* line 56, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 57, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header h1 .char9 {
   margin-left: -4px;
 }
-/* line 57, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 58, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header h1 .char10 {
   margin-left: -8px;
 }
-/* line 58, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 59, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header h1 .char11 {
   margin-left: -1px;
 }
-/* line 59, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 60, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header h1 .char12 {
   margin-left: -1px;
 }
-/* line 60, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 61, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header h1 .char13 {
   margin-left: -2px;
 }
-/* line 61, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 62, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header h1 .char14 {
   margin-left: -1px;
 }
-/* line 63, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 64, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header h2 {
   font: bold 21px/24px "Josefin Sans", verdana, sans-serif;
 }
-/* line 66, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 67, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header p {
   clear: left;
 }
-/* line 69, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 70, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header #services {
   letter-spacing: 10px;
   margin: 12px 0;
 }
-/* line 72, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 73, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header #services a {
   width: 24px;
   height: 24px;
@@ -422,7 +423,7 @@ header #services a {
   *display: inline;
 }
 
-/* line 81, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 82, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 nav#work {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(168, 8, 0, 0.8)), color-stop(50%, rgba(255, 13, 0, 0.8)), color-stop(100%, rgba(255, 13, 0, 0.8)));
   background-image: -webkit-linear-gradient(rgba(168, 8, 0, 0.8), rgba(255, 13, 0, 0.8), rgba(255, 13, 0, 0.8));
@@ -436,7 +437,7 @@ nav#work {
   border-bottom: 1px solid #ffbd42;
   height: 72px;
 }
-/* line 88, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 89, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 nav#work ul {
   list-style: none;
   margin: 0 auto;
@@ -450,13 +451,13 @@ nav#work ul {
   -webkit-box-align: stretch;
   box-align: stretch;
 }
-/* line 94, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 95, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 nav#work ul li {
   -moz-box-flex: 1;
   -webkit-box-flex: 1;
   box-flex: 1;
 }
-/* line 98, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 99, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 nav#work a {
   display: block;
   text-align: center;
@@ -466,20 +467,20 @@ nav#work a {
   font: bold 21px/24px "Josefin Sans", verdana, sans-serif;
   text-transform: uppercase;
 }
-/* line 108, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 109, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 nav#work a.on {
   color: white;
   cursor: default;
 }
 
-/* line 117, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 118, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 #projects section h3 {
   font: bold 28px/24px "Josefin Sans", verdana, sans-serif;
   letter-spacing: -1px;
   margin-bottom: 24px;
   color: #333;
 }
-/* line 123, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 124, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 #projects section .thumbs {
   width: 528px;
   overflow: hidden;
