@@ -35,6 +35,9 @@
       margin: 96px 0 0 368px;
       @include column(6, true);
       float: left;
+      img {
+        width: 480px;
+      }
     }
   }
 }
