@@ -13,6 +13,11 @@ a {
   color: $blue;
 }
 
+abbr {
+  font-variant: small-caps;
+  text-transform: lowercase;
+}
+
 // Selection colors (easy to forget)
 @include selection-color($lighter-orange);
 
@@ -121,9 +126,12 @@ nav#work {
       margin-bottom: 24px;
       color: #333;
     }
-    .thumbs {
-      @include column(6, true);
-      overflow: hidden;
+    h4 {
+      font: bold 21px/24px $title-font;
+      letter-spacing: -1px;
+    }
+    img {
+      margin-top: 11px;
     }
   }
 }
