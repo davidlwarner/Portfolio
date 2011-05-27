@@ -181,51 +181,14 @@ $green-hue: 127;
   padding-right: 20px;
 }
 
-/*.gigantic, .huge, .large, .bigger, .big {
-  text-rendering: optimizeLegibility;
-}
-
-.gigantic {
-  font-size: 110px;
-  line-height: 120px;
-  letter-spacing: -2px;
-}
-
-.huge {
-  font-size: 68px;
-  line-height: 72px;
-  letter-spacing: -1px;
-}
-
-.large {
-  font-size: 42px;
-  line-height: 48px;
-}
-
-.bigger {
-  font-size: 26px;
-  line-height: 36px;
-}
-
-.big {
-  font-size: 22px;
-  line-height: 30px;
-}
-
-.normal {
-  font-size: 16px;
-  line-height: 24px;
-}
-
-*/
 /* 11, 13, 17, 21, 27.5, 34, 44.5, 55, 72 */
-/* line 40, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_typography.scss */
+/* line 2, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_typography.scss */
 body {
   font: 17px/24px "OFL Sorts Mill Goudy TT", Georgia, serif;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 47, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_typography.scss */
+/* line 9, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_typography.scss */
 .small, small {
   font-size: 13px;
   line-height: 18px;
@@ -362,58 +325,60 @@ header h1 {
   font: bold 34px/48px "Josefin Sans", verdana, sans-serif;
   text-transform: uppercase;
   margin-bottom: 24px;
+  text-rendering: optimizeLegibility;
   /* kerning! */
 }
-/* line 59, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 60, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header h1 .char2 {
   margin-left: -4px;
 }
-/* line 60, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 61, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header h1 .char3 {
   margin-left: -7px;
 }
-/* line 61, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 62, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header h1 .char4 {
   margin-left: -2px;
 }
-/* line 62, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 63, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header h1 .char9 {
   margin-left: -4px;
 }
-/* line 63, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 64, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header h1 .char10 {
   margin-left: -8px;
 }
-/* line 64, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 65, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header h1 .char11 {
   margin-left: -1px;
 }
-/* line 65, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 66, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header h1 .char12 {
   margin-left: -1px;
 }
-/* line 66, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
-header h1 .char13 {
-  margin-left: -2px;
-}
 /* line 67, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+header h1 .char13 {
+  margin-left: -1px;
+}
+/* line 68, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header h1 .char14 {
   margin-left: -1px;
 }
-/* line 69, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 70, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header h2 {
   font: bold 21px/24px "Josefin Sans", verdana, sans-serif;
+  text-rendering: optimizeLegibility;
 }
-/* line 72, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 74, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header p {
   clear: left;
 }
-/* line 75, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 77, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header #services {
   letter-spacing: 10px;
   margin: 12px 0;
 }
-/* line 78, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 80, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 header #services a {
   width: 24px;
   height: 24px;
@@ -429,7 +394,7 @@ header #services a {
   *display: inline;
 }
 
-/* line 87, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 89, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 nav#work {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(168, 8, 0, 0.8)), color-stop(50%, rgba(255, 13, 0, 0.8)), color-stop(100%, rgba(255, 13, 0, 0.8)));
   background-image: -webkit-linear-gradient(rgba(168, 8, 0, 0.8), rgba(255, 13, 0, 0.8), rgba(255, 13, 0, 0.8));
@@ -443,7 +408,7 @@ nav#work {
   border-bottom: 1px solid #ffbd42;
   height: 72px;
 }
-/* line 94, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 96, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 nav#work ul {
   list-style: none;
   margin: 0 auto;
@@ -457,13 +422,13 @@ nav#work ul {
   -webkit-box-align: stretch;
   box-align: stretch;
 }
-/* line 100, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 102, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 nav#work ul li {
   -moz-box-flex: 1;
   -webkit-box-flex: 1;
   box-flex: 1;
 }
-/* line 104, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 106, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 nav#work a {
   display: block;
   text-align: center;
@@ -473,25 +438,25 @@ nav#work a {
   font: bold 21px/24px "Josefin Sans", verdana, sans-serif;
   text-transform: uppercase;
 }
-/* line 114, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 116, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 nav#work a.on {
   color: white;
   cursor: default;
 }
 
-/* line 123, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 125, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 #projects section h3 {
   font: bold 28px/24px "Josefin Sans", verdana, sans-serif;
   letter-spacing: -1px;
   margin-bottom: 24px;
   color: #333;
 }
-/* line 129, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 131, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 #projects section h4 {
   font: bold 21px/24px "Josefin Sans", verdana, sans-serif;
   letter-spacing: -1px;
 }
-/* line 133, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
+/* line 135, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_global.scss */
 #projects section img {
   margin-top: 11px;
 }
