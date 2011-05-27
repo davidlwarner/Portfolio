@@ -490,21 +490,22 @@ nav#work a.on {
   left: 0;
 }
 /* line 26, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_default.scss */
-#container #main nav#work ul {
+#container #main nav#work #nav-wrapper {
   width: 896px;
   margin: 0 auto;
 }
 /* line 29, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_default.scss */
-#container #main nav#work ul li:first-child {
+#container #main nav#work #nav-wrapper ul {
+  width: 528px;
   margin-left: 368px;
 }
-/* line 34, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_default.scss */
+/* line 35, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_default.scss */
 #container #main #projects {
   margin: 96px 0 0 368px;
   width: 528px;
   float: left;
 }
-/* line 38, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_default.scss */
+/* line 39, /Users/davidwarner/Documents/davidlwarner.com/portfolio/src/stylesheets/partials/_default.scss */
 #container #main #projects img {
   width: 480px;
 }
