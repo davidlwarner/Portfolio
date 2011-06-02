@@ -1,12 +1,19 @@
-%header
-  %h1 David L Warner
+%header.vcard
+  %h1.fn David L Warner
   %h2 UX Designer & Developer
   
   %p#services
-    %a.services-linkedin{ :href => "http://www.linkedin.com/in/davidlwarner" } LinkedIn
-    %a.services-twitter{ :href => "http://twitter.com/davidlwarner" } Twitter
-    %a.services-facebook{ :href => "http://www.facebook.com/davidw" } Facebook
-    %a.services-email{ :href => "mailto:david@davidlwarner.com" } Email
+    %a.services-linkedin.url.uid{ :href => "http://www.linkedin.com/in/davidlwarner", :rel => "me" } LinkedIn
+    %a.services-twitter.url.uid{ :href => "http://twitter.com/davidlwarner", :rel => "me" } Twitter
+    %a.services-facebook.url.uid{ :href => "http://www.facebook.com/davidw", :rel => "me" } Facebook
+    %a.services-email.email{ :href => "mailto:david@davidlwarner.com" } david@davidlwarner.com
+
+  %p.info
+    .tel 415-609-7490
+    .adr
+      %span.locality> San Francisco
+      ,
+      %abbr.region{ :title => "California" } CA
 
   :textile
     I’m an interaction designer and web developer with experience managing teams and projects. Companies I've worked with include Adaptive Path, Metropolitan Opera, Microsoft, Ning, Razorfish, and RealNetworks.
