@@ -50,11 +50,14 @@
 .coda-nav-right {
   position: absolute;
   right: 0;
+  top: 0;
 }
 
 .coda-nav {
   position: absolute;
   width: 528px;
+  top: 0;
+  left: 0;
   ul {
     clear: both;
     display: block;
