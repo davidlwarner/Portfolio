@@ -43,13 +43,13 @@ end
 
 def rebuild_site(relative)
   puts "\n\n>>> Change Detected to: #{relative} <<<"
-  if (relative.include? ".sass") || (relative.include? ".scss")
-    IO.popen('rake styles:generate'){|io| print(io.readpartial(512)) until io.eof?}
-    puts '>>> Update Styles Complete <<<'
-  else
-    IO.popen('rake build'){|io| print(io.readpartial(512)) until io.eof?}
-    puts '>>> Update Site Complete <<<'
-  end
+  # if (relative.include? ".sass") || (relative.include? ".scss")
+  #   IO.popen('rake styles:generate'){|io| print(io.readpartial(512)) until io.eof?}
+  #   puts '>>> Update Styles Complete <<<'
+  # else
+  IO.popen('rake build'){|io| print(io.readpartial(512)) until io.eof?}
+  puts '>>> Update Site Complete <<<'
+  # end
 end
 
 def rebuild_style(relative)
