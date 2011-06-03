@@ -43,6 +43,7 @@ body {
 @include all-services-sprites;
 
 header {
+  background: $darker-green;
   background: rgba($darker-green, .75);
   @include box-shadow(rgba($darker-green, .75) 0 0 8px);
   @include border-bottom-radius(4px);
@@ -84,6 +85,7 @@ header {
 }
 
 nav#work {
+  background: $red;
   @include background-image(linear-gradient(rgba($darker-red, 0.8),
                                             rgba($red, 0.8),
                                             rgba($red, 0.8)));
