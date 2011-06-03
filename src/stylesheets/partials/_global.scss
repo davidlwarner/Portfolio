@@ -52,24 +52,16 @@ header {
   h1 {
     color: $orange;
     @include text-shadow(rgba(black, .25) 0 0 4px);
-    font: bold 34px/48px $title-font;
+    font: 34px/48px $title-font;
     text-transform: uppercase;
     margin-bottom: 24px;
     text-rendering: optimizeLegibility;
-    /* kerning! */
-    .char2  { margin-left: -4px; }
-    .char3  { margin-left: -7px; }
-    .char4  { margin-left: -2px; }
-    .char9  { margin-left: -4px; }
-    .char10 { margin-left: -8px; }
-    .char11 { margin-left: -1px; }
-    .char12 { margin-left: -1px; }
-    .char13 { margin-left: -1px; }
-    .char14 { margin-left: -1px; }
+    letter-spacing: -3px;
   }
   h2 {
-    font: bold 21px/24px $title-font;
+    font: 21px/24px $title-font;
     text-rendering: optimizeLegibility;
+    letter-spacing: -2px;
   }
   p {
     clear: left;
@@ -114,8 +106,9 @@ nav#work {
     text-decoration: none;
     padding: 36px 0 12px;
     color: $orange;
-    font: bold 21px/24px $title-font;
+    font: 21px/24px $title-font;
     text-transform: uppercase;
+    letter-spacing: -1px;
     &:hover {
     }
     &.on {
@@ -128,14 +121,14 @@ nav#work {
 #projects {
   section {
     h3 {
-      font: bold 28px/24px $title-font;
-      letter-spacing: -1px;
+      font: 28px/24px $title-font;
+      letter-spacing: -3px;
       margin-bottom: 24px;
       color: #333;
     }
     h4 {
-      font: bold 21px/24px $title-font;
-      letter-spacing: -1px;
+      font: 21px/24px $title-font;
+      letter-spacing: -2px;
     }
     img {
       margin-top: 11px;
