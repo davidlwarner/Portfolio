@@ -85,7 +85,16 @@ nav#work {
                                             rgba($red, 0.8)));
   @include box-shadow(rgba($red, 0.8) 0 0 4px);
   border-bottom: 1px solid $light-orange;
-  height: 72px;
+  margin-bottom: 24px;
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: white;
+    margin: 0;
+    padding-top: 12px;
+  }
   ul {
     list-style: none;
     margin: 0 auto;
@@ -100,7 +109,7 @@ nav#work {
     display: block;
     text-align: center;
     text-decoration: none;
-    padding: 36px 0 12px;
+    padding: 12px 0;
     color: $orange;
     font: 21px/24px $title-font;
     text-transform: uppercase;
