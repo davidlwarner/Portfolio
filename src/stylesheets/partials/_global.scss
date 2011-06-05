@@ -43,29 +43,28 @@ header#site {
     border: 1px solid $darker-green;
     border-width: 0 1px 1px;
     color: white;
+    padding: 6px 0;
     h1 {
       color: $orange;
       @include text-shadow(rgba(black, .25) 0 0 4px);
       font: 34px/48px $title-font;
       text-transform: uppercase;
-      margin-bottom: 24px;
       text-rendering: optimizeLegibility;
       letter-spacing: -3px;
+      margin-bottom: 0;
     }
     h2 {
-      font: 21px/24px $title-font;
+      font: 21px/48px $title-font;
       text-rendering: optimizeLegibility;
       letter-spacing: -2px;
     }
     .info {
-      text-align: center;
       font-size: 13px;
       line-height: 18px;
+      margin-bottom: 6px;
     }
     #services {
       letter-spacing: 10px;
-      margin: 12px 0;
-      *margin-left: 85px;
       a {
         width: 24px;
         height: 24px;
