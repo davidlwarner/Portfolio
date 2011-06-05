@@ -137,7 +137,10 @@ nav#work {
     h4 {
       font: 21px/24px $title-font;
       letter-spacing: -2px;
-      margin-bottom: 12px;
+      margin: 12px 0;
+    }
+    img {
+      cursor: pointer;
     }
   }
 }
