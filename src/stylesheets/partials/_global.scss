@@ -29,61 +29,52 @@ html {
 body {
   margin: 0 auto;
   color: $dark-gray;
-  @include background-image(linear-gradient(rgba(0, 0, 0, 0), 
-                                            rgba(0, 0, 0, 0),
-                                            rgba(0, 0, 0, 0.15)));
-}
-
-#container {
-  margin: 0 auto;
-  @include pie-clearfix;
 }
 
 @import "services/*.png";
 @include all-services-sprites;
 
-header {
-  background: $darker-green;
-  background: rgba($darker-green, .75);
-  @include box-shadow(rgba($darker-green, .75) 0 0 8px);
-  @include border-bottom-radius(4px);
-  border: 1px solid $darker-green;
-  border-width: 0 1px 1px;
-  color: white;
-  h1 {
-    color: $orange;
-    @include text-shadow(rgba(black, .25) 0 0 4px);
-    font: 34px/48px $title-font;
-    text-transform: uppercase;
-    margin-bottom: 24px;
-    text-rendering: optimizeLegibility;
-    letter-spacing: -3px;
-  }
-  h2 {
-    font: 21px/24px $title-font;
-    text-rendering: optimizeLegibility;
-    letter-spacing: -2px;
-  }
-  p {
-    clear: left;
-  }
-  .info {
-    text-align: center;
-    font-size: 13px;
-    line-height: 18px;
-  }
-  #services {
-    letter-spacing: 10px;
-    margin: 12px 0;
-    *margin-left: 85px;
-    a {
-      width: 24px;
-      height: 24px;
-      text-indent: -9999px;
-      *display: block;
-      *float: left;
-      *margin-right: 10px;
-      @include inline-block;
+header#site {
+  #basic-info {
+    background: $darker-green;
+    background: rgba($darker-green, .75);
+    @include box-shadow(rgba($darker-green, .75) 0 0 8px);
+    @include border-bottom-radius(4px);
+    border: 1px solid $darker-green;
+    border-width: 0 1px 1px;
+    color: white;
+    h1 {
+      color: $orange;
+      @include text-shadow(rgba(black, .25) 0 0 4px);
+      font: 34px/48px $title-font;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      text-rendering: optimizeLegibility;
+      letter-spacing: -3px;
+    }
+    h2 {
+      font: 21px/24px $title-font;
+      text-rendering: optimizeLegibility;
+      letter-spacing: -2px;
+    }
+    .info {
+      text-align: center;
+      font-size: 13px;
+      line-height: 18px;
+    }
+    #services {
+      letter-spacing: 10px;
+      margin: 12px 0;
+      *margin-left: 85px;
+      a {
+        width: 24px;
+        height: 24px;
+        text-indent: -9999px;
+        *display: block;
+        *float: left;
+        *margin-right: 10px;
+        @include inline-block;
+      }
     }
   }
 }
