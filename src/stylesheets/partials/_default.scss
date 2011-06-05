@@ -27,9 +27,11 @@ header#site {
   #about-me {
     padding: 24px 0;
     min-height: 188px; // Make sure you can see my pretty face
-    img {
+    position: relative;
+    img.photo {
       position: absolute;
       z-index: 1;
+      left: 0;
     }
     #bio {
       @include column(6, true);

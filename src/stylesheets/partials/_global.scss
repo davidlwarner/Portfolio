@@ -96,6 +96,7 @@ nav#work {
   ul {
     list-style: none;
     margin: 0 auto;
+    @include column(10, auto);
     @include display-box;
     @include box-orient(horizontal);
     @include box-align(stretch);
