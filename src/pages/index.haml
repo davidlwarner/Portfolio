@@ -5,19 +5,17 @@
       %h2.role UX Designer & Developer
 
       #contact-info
-
+        %p#services
+          %a.services-linkedin.url{ :href => "http://www.linkedin.com/in/davidlwarner", :rel => "me" } LinkedIn
+          %a.services-twitter.url{ :href => "http://twitter.com/davidlwarner", :rel => "me" } Twitter
+          %a.services-facebook.url{ :href => "http://www.facebook.com/davidw", :rel => "me" } Facebook
+          %a.services-email.email{ :href => "mailto:david@davidlwarner.com", :itemprop => "email" } david@davidlwarner.com
         %p.info
           %span.tel{ :itemprop => "telephone" } 415-609-7490
           %span.adr{ :itemprop => "address", :itemscope => true, :itemtype => "http://schema.org/PostalAddress" }
             %span.locality{ :itemprop => "addressLocality" }> San Francisco
             ,
             %abbr.region{ :title => "California", :itemprop => "addressRegion" } CA
-  
-        %p#services
-          %a.services-linkedin.url{ :href => "http://www.linkedin.com/in/davidlwarner", :rel => "me" } LinkedIn
-          %a.services-twitter.url{ :href => "http://twitter.com/davidlwarner", :rel => "me" } Twitter
-          %a.services-facebook.url{ :href => "http://www.facebook.com/davidw", :rel => "me" } Facebook
-          %a.services-email.email{ :href => "mailto:david@davidlwarner.com", :itemprop => "email" } david@davidlwarner.com
 
   #about-me.container
     = img "me.png", :class => "photo", :itemprop => "image"
@@ -28,7 +26,6 @@
 #main
   %nav#work
     .container
-      %h2 Recent Work
       #nav-wrapper
         %ul
           %li= link_to "Ning", "#ning", :class => "on"
