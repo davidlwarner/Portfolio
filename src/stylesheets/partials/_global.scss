@@ -44,7 +44,6 @@ header#site {
     padding: 6px 0;
     @include text-shadow(rgba(black, .25) 0 0 3px);
     h1 {
-      color: $orange;
       font: 72px/72px $title-font;
       text-transform: uppercase;
       text-rendering: optimizeLegibility;
@@ -125,23 +124,63 @@ nav#work {
 
 #projects {
   section {
+    @include column(10, true);
+    overflow: hidden;
+    position: relative;
     header,
     .info {
       margin-bottom: 12px;
+      h3 {
+        font: 45px/48px $title-font;
+        letter-spacing: -1px;
+        margin-bottom: 24px;
+        color: #333;
+      }
     }
-    h3 {
-      font: 28px/24px $title-font;
-      letter-spacing: -3px;
-      margin-bottom: 24px;
-      color: #333;
+    .pager {
+      width: 100%;
+      text-align: center;
     }
-    h4 {
-      font: 21px/24px $title-font;
-      letter-spacing: -2px;
-      margin: 12px 0;
+    .arrows {
+      .prev {
+        float: left;
+      }
+      .next {
+        float: right;
+      }
     }
-    img {
-      cursor: pointer;
+    .panel-container {
+      clear: left;
+      position: relative;
+      @include transition-property(left);
+      @include transition-duration(1s);
+      .panel {
+        @include column(10, true);
+        float: left;
+        h4 {
+          font: 28px/48px $title-font;
+          letter-spacing: -1px;
+          margin: 12px 0;
+        }
+        img {
+          cursor: pointer;
+          @include column(4);
+          float: left;
+          display: block;
+          @include transition-property(width);
+          @include transition-duration(1s);
+          position: relative;
+          z-index: 2;
+          &.zoom {
+            width: auto;
+            max-width: 896px; // 10col
+            float: none;
+            margin: 0 auto;
+            @include column(10, true);
+            float: none;
+          }
+        }
+      }
     }
   }
 }
