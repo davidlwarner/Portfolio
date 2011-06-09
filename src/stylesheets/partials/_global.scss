@@ -149,6 +149,26 @@ nav#work {
         float: right;
       }
     }
+    nav.panel-nav {
+      clear: both;
+      background: lighten($dark-orange, 25);
+      background: rgba($dark-orange, .5);
+      @include border-radius(4px);
+      @include pie-clearfix;
+      a {
+        display: block;
+        text-decoration: none;
+        padding: 10px 10px 5px;
+        &.prev {
+          float: left;
+          border-right: 1px solid #ccc;
+        }
+        &.next {
+          float: right;
+          border-left: 1px solid #ccc;
+        }
+      }
+    }
     .panel-container {
       clear: left;
       position: relative;
