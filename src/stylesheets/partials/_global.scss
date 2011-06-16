@@ -10,7 +10,7 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $yellow;
 }
 
 abbr {
@@ -19,125 +19,191 @@ abbr {
 }
 
 // Selection colors (easy to forget)
-@include selection-color($lighter-orange);
+@include selection-color($yellow);
 
-
-html {
-  background: #eee url('/images/bg.jpg');
-}
 
 body {
   margin: 0 auto;
   color: $dark-gray;
-  @include background-image(linear-gradient(rgba(0, 0, 0, 0), 
-                                            rgba(0, 0, 0, 0),
-                                            rgba(0, 0, 0, 0.15)));
-}
-
-#container {
-  margin: 0 auto;
-  @include pie-clearfix;
+  background: $yellow;
 }
 
 @import "services/*.png";
 @include all-services-sprites;
 
-header {
-  background: $darker-green;
-  background: rgba($darker-green, .75);
-  @include box-shadow(rgba($darker-green, .75) 0 0 8px);
-  @include border-bottom-radius(4px);
-  border: 1px solid $darker-green;
-  border-width: 0 1px 1px;
+header#site {
+  #basic-info {
+    position: relative;
+    z-index: 2;
+    border-bottom: 1px solid $dark-red;
+    background: $red;
+    background: rgba($red, .8);
+    color: white;
+    padding: 6px 0;
+    @include box-shadow(rgba(black, .5) 0 0 5px);
+    h1 {
+      font: 72px/72px $title-font;
+      text-transform: uppercase;
+      text-rendering: optimizeLegibility;
+      letter-spacing: -1px;
+      margin-bottom: 0;
+      @include text-shadow(rgba(black, 0.8) 1px 1px 1px);
+    }
+    h2 {
+      font: 45px/45px $title-font;
+      text-rendering: optimizeLegibility;
+      letter-spacing: -1px;
+      @include text-shadow(rgba(black, 0.4) 1px 1px 0);
+    }
+    #services {
+      letter-spacing: 10px;
+      margin: 7px 0 9px;
+      @include pie-clearfix;
+      a {
+        width: 24px;
+        height: 24px;
+        text-indent: -9999px;
+        display: block;
+        float: right;
+        margin-left: 10px;
+      }
+    }
+    .info {
+      font-size: 13px;
+      line-height: 18px;
+      font: 24px/24px $title-font;
+      text-align: right;
+      text-rendering: optimizeLegibility;
+      @include text-shadow(rgba(black, 0.4) 1px 1px 0);
+      margin: 0;
+      .tel {
+        margin-right: .25em;
+      }
+      abbr {
+        letter-spacing: -2px;
+      }
+    }
+  }
+}
+
+#main {
+  background: $dark-blue;
+  @include background(linear-gradient(top, adjust-color($dark-blue, $saturation: -10%, $lightness: +10%) 0,
+                                           $dark-blue 96px,
+                                           $dark-blue 90%,
+                                           adjust-color($dark-blue, $saturation: +10%, $lightness: -10%)));
+  border-top: 1px solid $dark-blue;
+  border-top: 1px solid adjust-color($dark-blue, $saturation: -30%, $lightness: +30%);
+  border-bottom: 1px solid adjust-color($dark-blue, $saturation: -40%, $lightness: +40%);
   color: white;
-  h1 {
-    color: $orange;
-    @include text-shadow(rgba(black, .25) 0 0 4px);
-    font: 34px/48px $title-font;
-    text-transform: uppercase;
+  @include box-shadow(rgba(black, .75) 0 0 5px);
+  nav#work {
     margin-bottom: 24px;
-    text-rendering: optimizeLegibility;
-    letter-spacing: -3px;
-  }
-  h2 {
-    font: 21px/24px $title-font;
-    text-rendering: optimizeLegibility;
-    letter-spacing: -2px;
-  }
-  p {
-    clear: left;
-  }
-  .info {
-    text-align: center;
-    font-size: 13px;
-    line-height: 18px;
-  }
-  #services {
-    letter-spacing: 10px;
-    margin: 12px 0;
-    *margin-left: 85px;
+    ul {
+      list-style: none;
+      margin: 0 auto;
+      @include column(10, auto);
+      @include display-box;
+      @include box-orient(horizontal);
+      @include box-align(stretch);
+      li {
+        @include box-flex(1);
+      }
+    }
     a {
-      width: 24px;
-      height: 24px;
-      text-indent: -9999px;
-      *display: block;
-      *float: left;
-      *margin-right: 10px;
-      @include inline-block;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      padding: 12px 0;
+      font: 45px/48px $title-font;
+      text-transform: uppercase;
+      text-rendering: optimizeLegibility;
+      @include text-shadow(rgba($dark-blue, 0.5) 1px 1px 0);
+      &.on {
+        cursor: default;
+        color: white;
+      }
+      &:hover {
+        @include text-shadow(rgba($dark-blue, 0.5) 1px 1px 0, rgba(white, 0.5) 0 0 5px);
+        &.on {
+          @include text-shadow(rgba($dark-blue, 0.5) 1px 1px 0);
+        }
+      }
+    }
+  }
+
+  #projects {
+    section {
+      @include column(10, true);
+      h3 {
+        margin: 48px 0 0;
+        font: 34px/48px $title-font;
+        text-align: center;
+        clear: left;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        &:before, &:after {
+          content: "◆◆◆";
+          margin: 0 8em;
+          font-size: 13px;
+          line-height: 0;
+          letter-spacing: 20px;
+        }
+      }
+      h4 {
+        text-align: center;
+        margin-bottom: 24px;
+        font: 21px/24px $title-font;
+        a {
+          margin-right: 1em;
+        }
+      }
+      h5 {
+        font: 28px/48px $title-font;
+        margin: 12px 0;
+        letter-spacing: -1px;
+        clear: left;
+        text-align: center;
+      }
+      p {
+        @include column(8, true);
+        margin-left: 92px;
+      }
+      .thumb {
+        @include pie-clearfix;
+        min-height: 216px; // 16x9 4-col img height + change
+        p {
+          width: auto;
+          margin-left: 368px;
+        }
+        img {
+          cursor: pointer;
+          @include column(4);
+          display: block;
+          position: absolute;
+          @include transition(all, 1s);
+          &.zoom {
+            z-index: 9999;
+            @include column(10, true);
+            @include box-shadow(rgba(#000, .75) 0 3px 10px);
+          }
+        }
+      }
     }
   }
 }
 
-nav#work {
-  background: $red;
-  @include background-image(linear-gradient(rgba($darker-red, 0.8),
-                                            rgba($red, 0.8),
-                                            rgba($red, 0.8)));
-  @include box-shadow(rgba($red, 0.8) 0 0 4px);
-  border-bottom: 1px solid $light-orange;
-  height: 72px;
-  ul {
-    list-style: none;
-    margin: 0 auto;
-    @include display-box;
-    @include box-orient(horizontal);
-    @include box-align(stretch);
-    li {
-      @include box-flex(1);
-    }
-  }
+footer {
+  font-size: 13px;
+  line-height: 48px;
+  @include pie-clearfix;
   a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    padding: 36px 0 12px;
-    color: $orange;
-    font: 21px/24px $title-font;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-    &:hover {
-    }
-    &.on {
-      color: white;
-      cursor: default;
-    }
+    color: $dark-blue;
   }
-}
-
-#projects {
-  section {
-    h3 {
-      font: 28px/24px $title-font;
-      letter-spacing: -3px;
-      margin-bottom: 24px;
-      color: #333;
-    }
-    h4 {
-      font: 21px/24px $title-font;
-      letter-spacing: -2px;
-    }
-    img {
-      margin-top: 11px;
-    }
+  .left {
+    float: left;
+  }
+  .right {
+    float: right;
   }
 }

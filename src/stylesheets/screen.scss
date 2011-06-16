@@ -1,12 +1,11 @@
-$less-grid-element: unquote("#container");
+$less-grid-element: unquote(".container");
 
 @import "compass";
 @import "compass/reset";
 
-@import "less/framework";
-
+@import "partials/framework";
 @import "partials/_colors";
-@import "partials/slider";
+/*@import "partials/slider";*/
 @import "partials/typography";
 @import "partials/global";
 @import "partials/default";

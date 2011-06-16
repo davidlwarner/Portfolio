@@ -23,10 +23,14 @@
     %link{ :rel => "shortcut icon", :href => "/favicon.ico" }
     %link{ :rel => "apple-touch-icon", :href => "/apple-touch-icon.png" }
 
-  %body.coda-slider-no-js
-    #container
+  %body
 
-      = yield
+    = yield
+
+    %footer.container
+      .left © 2011 David L Warner
+      .right
+        = link_to "Social Media Icons by Paul Lloyd", "http://paulrobertlloyd.com/2009/06/social_media_icons"
 
     %script{ :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" }
     %script
@@ -36,10 +40,12 @@
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
       g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
       s.parentNode.insertBefore(g,s)}(document,'script'));
-    %script{ :src => "/js/jquery.coda-slider-2.0.js" }
-    %script{ :src => "/js/jquery.animate-enhanced.min.js" }
+
+    / %script{ :src => "/js/jquery.coda-slider-2.0.js" }
+    / %script{ :src => "/js/jquery.animate-enhanced.min.js" }
     / %script{ :src => "http://cycle-plugin.googlecode.com/files/jquery.cycle.all.min.js" }
     / %script{ :src => "/js/ios-scroll.js" }
+    / %script{ :src => "/js/jquery.cycle.all.min.js" }
     / %script{ :src => "/js/jquery.touchwipe.min.js" }
     %script{ :src => "/js/script.js" }
-    %script{ :src => "/js/jqbrowser-compressed.js" }
+    / %script{ :src => "/js/jqbrowser-compressed.js" }
