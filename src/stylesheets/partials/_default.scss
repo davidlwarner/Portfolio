@@ -5,8 +5,6 @@
 
 #{$less-grid-element} {
   @include grid(10);
-  margin: 0 auto;
-  @include pie-clearfix;
 }
 
 header#site {
@@ -46,8 +44,29 @@ header#site {
 #main {
   position: relative;
   z-index: 2;
+  nav#work {
+    ul {
+      @include column(10, auto);
+    }
+  }
   #projects {
-    min-height: 600px;
     padding-bottom: 360px;
+    section {
+      @include column(10, true);
+      p {
+        margin-left: 92px;
+      }
+      .thumb {
+        min-height: 216px; // 16x9 4-col img height + change
+        img {
+          @include column(4);
+          position: absolute;
+        }
+        p {
+          width: auto;
+          margin-left: 368px;
+        }
+      }
+    }
   }
 }

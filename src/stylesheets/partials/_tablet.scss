@@ -6,15 +6,70 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   #{$less-grid-element} {
     @include grid(8);
-    
-    header {
-      @include column(8, true);
-      float: none;
+  }
+
+  header#site {
+    #my-photo {
+      position: relative;
+      img.photo {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
     }
-    
-    #main {
-      margin-left: 92px;
-      float: none;
+    #basic-info {
+      h1 {
+        @include column(4);
+        float: left;
+      }
+      h2 {
+        float: left;
+        margin-top: 22px;
+      }
+      #contact-info {
+        float: right;
+      }
+    }
+    #about-me {
+      padding: 24px 0;
+      min-height: 200px; // Make sure you can see my pretty face
+      @include text-shadow(rgba(white, 0.4) 1px 1px 0);
+      #bio {
+        @include column(4, true);
+        margin-left: 368px; // 4 columns
+        float: left;
+      }
+    }
+  }
+
+  #main {
+    position: relative;
+    z-index: 2;
+    nav#work {
+      ul {
+        @include column(8, auto);
+      }
+    }
+    #projects {
+      padding-bottom: 240px;
+      section {
+        @include column(8, true);
+        p {
+          margin-left: 0;
+        }
+        .thumb {
+          img {
+            @include column(4);
+/*            position: static;*/
+            &.zoom {
+              @include column(8, true);
+            }
+          }
+          p {
+/*            margin-left: 0;*/
+          }
+        }
+      }
     }
   }
 }
