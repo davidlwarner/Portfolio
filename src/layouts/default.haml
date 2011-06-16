@@ -24,9 +24,13 @@
     %link{ :rel => "apple-touch-icon", :href => "/apple-touch-icon.png" }
 
   %body
-    #container
 
-      = yield
+    = yield
+
+    %footer.container
+      .left © 2011 David L Warner
+      .right
+        = link_to "Social Media Icons by Paul Lloyd", "http://paulrobertlloyd.com/2009/06/social_media_icons"
 
     %script{ :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" }
     %script

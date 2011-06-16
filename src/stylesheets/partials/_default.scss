@@ -10,28 +10,26 @@
 }
 
 header#site {
-  h1 {
-    @include column(4);
-    float: left;
-  }
-  h2 {
-    float: left;
-    margin-top: 22px;
-  }
-  #contact-info {
-    float: right;
-    p {
-      margin: 0;
+  #basic-info {
+    h1 {
+      @include column(4);
+      float: left;
+    }
+    h2 {
+      float: left;
+      margin-top: 22px;
+    }
+    #contact-info {
+      float: right;
     }
   }
   #about-me {
     padding: 24px 0;
-    min-height: 188px; // Make sure you can see my pretty face
-    position: relative;
+    min-height: 200px; // Make sure you can see my pretty face
+    @include text-shadow(rgba(white, 0.4) 1px 1px 0);
     img.photo {
       position: absolute;
-      z-index: 1;
-      left: 0;
+      top: 0;
     }
     #bio {
       @include column(6, true);
@@ -44,57 +42,8 @@ header#site {
 #main {
   position: relative;
   z-index: 2;
-  background: #eee url('/images/bg.jpg');
   #projects {
-/*    @include background-image(linear-gradient(rgba(0, 0, 0, 0), 
-                                              rgba(0, 0, 0, 0),
-                                              rgba(0, 0, 0, 0.15)));*/
     min-height: 600px;
-    header {
-      float: left;
-      @include column(2);
-    }
-    .info {
-      float: left;
-      @include column(8, true);
-    }
-    .coda-slider {
-      @include column(10, true);
-      min-height: 540px; // Enough for full-height pix
-      .panel {
-        @include column(10, true);
-        position: relative;
-      }
-      img {
-        @include column(4);
-        float: left;
-        display: block;
-        @include transition-property(width);
-        @include transition-duration(1s);
-        position: relative;
-        z-index: 2;
-        &.zoom {
-/*          width: auto;
-          max-width: 896px; // 10col
-          float: none;
-          margin: 0 auto;*/
-          @include column(10, true);
-          float: none;
-        }
-      }
-      .about {
-        @include column(6, true);
-        left: 368px; // 4 columns
-        margin-top: 48px;
-        @include transition-property(opacity);
-        @include transition-duration(1s);
-        z-index: 1;
-        position: absolute;
-        top: 0;
-        &.hide {
-          opacity: 0;
-        }
-      }
-    }
+    padding-bottom: 360px;
   }
 }

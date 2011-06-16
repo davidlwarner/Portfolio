@@ -18,135 +18,203 @@
             %abbr.region{ :title => "California", :itemprop => "addressRegion" } CA
 
   #about-me.container
-    = img "me.png", :class => "photo", :itemprop => "image"
+    = img "me.jpg", :class => "photo", :itemprop => "image"
     #bio
       :textile
-        I’m an interaction designer and web developer with experience managing teams and projects. Companies I've worked with include Adaptive Path, Metropolitan Opera, Microsoft, Ning, Razorfish, and RealNetworks.
+
+        I'm an interaction designer and front-end engineer with a decade of experience managing teams and projects.
+
+        I focus on the intersection of clean design with clean code. I'm happiest when I'm collaborating with a strong team to simplify the complex, and to make people’s lives better.
+
+        I've worked with Adaptive Path, Allstate, the Metropolitan Opera, Ning, and RealNetworks. In my spare time, I geek out on music.
 
 #main
   %nav#work
     .container
       #nav-wrapper
         %ul
-          %li= link_to "Ning", "#ning", :class => "on"
-          %li= link_to "Crowdcast", "#crowdcast"
-          %li= link_to "LoudSauce", "#loudsauce"
+          %li= link_to "Design", "#design", :class => "on"
+          %li= link_to "Development", "#development"
+          %li= link_to "Leadership", "#leadership"
 
   #projects.container
-    %section#ning
-      %header
-        %h3 Ning
-        = link_to "http://ning.com"
+    %section#design
+      :textile
+      
+        I create clear, functional interfaces. It’s important that I can write the front-end code for my designs so that I can embrace possibilities and avoid pitfalls. My design process is collaborative and relies on quick experiments to find solutions that help users, while meeting technical and business objectives.
+
+      %h3 Ning
+      %h4
+        = link_to "http://ning.com", "http://ning.com"
         2006–2009
-      .info
+      
+      :textile
+
+        I was a designer and client-side developer for Ning’s primary product, “Your Own Social Network,” for 3 years, beginning with its inception in 2006. By the time I left in 2009, the product had 36 million users and 1.6 million social networks. Our small design team, consisting of just myself and another designer from 2006–2008, created most of the interaction and graphic design.
+
+      %h5 The “Create Your Own Network” Flow
+
+      .thumb
+
+        = img "ning/gyo.jpg"
+
         :textile
-          I was a designer and client-side developer for Ning’s primary product, “Your Own Social Network,” for 3 years, beginning with its inception in 2006. By the time I left in 2009, the product had 36 million users and 1.6 million social networks. Our small design team, consisting of just myself and another designer for the first 2 years, created most of the interaction and graphic design, as well as production <abbr>HTML</abbr> and <abbr>CSS</abbr> code.
-      .panel-container
-        .panel-container-inside
-          .panel
-            %h4 The “Create Your Own Network” Flow
 
-            = img "ning/gyo.jpg"
+          The interaction and graphic design of the “Create Your Own Social Network” pages was my first big project at Ning. Our goal was to make the process intuitive for non-technical users, while providing an understanding of the features and a feeling of ownership.
 
-            .about
-              :textile
+          I created wireframes and led usability studies to design a flow that was instrumental to the initial uptake and long-term success of the product.
 
-                The interaction and graphic design of the “Create Your Own Network” pages was my first big project at Ning. Our goal was to make the process feel fast and easy for non-technical users, while giving the user an understanding of the features and a feeling of ownership.
+      %h5 Sign Up Flows
 
-                I created wireframes and led usability studies to design a flow that was instrumental to the success of the product.
-          .panel
-            %h4 Sign Up Flows
+      .thumb
+      
+        = img "ning/signup.png"
 
-            = img "ning/signup.png"
-
-            .about
-              :textile
-
-                Throughout 2007, Ning was rapidly adding features to fuel a growing number of users. However, I argued that we could get even more growth by redesigning our Sign-In, Sign-Up, and Invitation flows and pages. We released my redesign in the last weeks of 2007 and saw a dramatic surge that initiated the immense growth Ning saw in 2008.
-
-                I updated the layout, typography, flow, wording, and <abbr>HTML</abbr> & <abbr>CSS</abbr> of the pages with an eye towards lowering every hurdle. I also set up and ran several rounds of usability testing to find issues and ensure we were improving.
-          .panel
-            %h4 Social Networking Features
-
-            = img "ning/photo.jpg"
-
-            .about
-              :textile
-
-                In addition to the core product, I worked closely on most of the individual features of the networks, including photos, videos, messages, forums, groups, network administration pages, and an activity stream. I also worked on the initial product design that allowed for features to be added in a modular fashion.
-          .panel
-            %h4 Network Themes
-
-            = img "ning/themes.jpg"
-
-            .about
-              :textile
-
-                Each network created on Ning has its own theme, consisting of colors, fonts and background images. I worked on the theme-creation page and creating an underlying product design that made sense regardless of the theme applied to it. I also created an <abbr>HTML</abbr> and <abbr>CSS</abbr> framework to support theming across many features, including new and updated future features.
-
-    %section#crowdcast
-      %header
-        %h3 Crowdcast
-        = link_to "http://crowdcast.com"
-        2010
-      .info
         :textile
-          In 2010, I was the lead interaction and graphic designer for Crowdcast’s enterprise prediction market. I led a redesign of the product to make it easier for users and administrators to use and understand. The product was used by Electronic Arts, Hallmark, and several other major product and retail companies to gather and interpret information from their employees.
-      .panel-container
-        .panel-container-inside
-          .panel
-            %h4 Updated Design
 
-            = img "crowdcast/placebet.png"
+          Throughout 2007, Ning was focused on rapidly adding features to support a growing number of users. However, I argued that we could boost growth by redesigning our Sign Up, Sign In, and Invitation flows and pages. We released my redesign in the last weeks of 2007 and saw a dramatic surge that initiated the immense growth Ning saw in 2008.
 
-            .about
-              :textile
+          I updated the graphic design, flow, wording, and <abbr>HTML</abbr> & <abbr>CSS</abbr> of the pages with an eye towards lowering every hurdle. I also set up and ran several rounds of usability studies that were critical to finding and solving issues.
 
-                I updated the interaction and graphic design to help users understand how to use the product, which led to more and better usage. I also designed a commenting system to encourage users to discuss the numbers and dates they’d entered into the product.
-          .panel
-            %h4 New Executive Dashboard
+      %h5 Social Networking Features
 
-            = img "crowdcast/dashboard.png"
+      .thumb
 
-            .about
-              :textile
+        = img "ning/photo.jpg"
 
-                I created a set of new information dashboards to help administrators better interpret the information that the system was providing them. Administrators could see a single page comparing all their metrics against targets, with an additional page of detailed information for each metric.
-          .panel
-            %h4 Product Experimentation
+        :textile
 
-            = img "crowdcast/experiments.png"
-
-            .about
-              :textile
-
-                To more quickly achieve product-market fit, I took several approaches to product experimentation, including rapidly user testing concepts using paper prototyping and mechanical turking.
-
-    %section#loudsauce
-      %header
-        %h3 LoudSauce
-        = link_to "http://loudsauce.com"
+          In addition to the core product, I worked closely on most of the individual features of the networks, including photos, videos, messages, forums, groups, network administration pages, and an activity stream. I also worked on the initial product design that allowed for future features to be added in a modular fashion.
+        
+      %h3 LoudSauce
+      %h4
+        = link_to "http://loudsauce.com", "http://loudsauce.com"
         2011
-      .info
+
+      .thumb
+
+        = img "loudsauce/detail.jpg"
+
         :textile
-          In the first half of 2011, I worked on the interaction and graphic design of LoudSauce’s crowd-funded advertising platform. I collaborated with 2 Rails developers to design and build a functioning site, starting from an existing static website prototype.
-      .panel-container
-        .panel-container-inside
-          .panel
-            %h4 Interaction Design
 
-            = img "loudsauce/home.jpg"
+          I worked on the interaction and graphic design of LoudSauce, which enables crowd-funded advertising in <abbr>TV</abbr>, billboards and print media for non-profits and social good. I collaborated with 2 Rails developers to design and build a functioning site, starting from an existing static website prototype.
 
-            .about
-              :textile
+      %h3 Crowdcast
+      %h4
+        = link_to "http://crowdcast.com", "http://crowdcast.com"
+        2010
 
-                I worked closely with the company founder and the tech team to rapidly wireframe and design a minimally viable product within a tight budget.
-          .panel
-            %h4 Graphic Design
+      .thumb
 
-            = img "loudsauce/detail.jpg"
+        = img "crowdcast/placebet.png"
 
-            .about
-              :textile
+        :textile
 
-                Starting from the existing design, I did a design realignment to better support the goals and technical needs of the product.
+          I was the lead interaction and graphic designer for Crowdcast, which helps large businesses determine more accurate forecasts by aggregating employee knowledge through prediction markets. As the only designer, I led a redesign of the product to make it easier for users and administrators. Crowdcast was used by Electronic Arts, Hallmark, and several other major product and retail companies to gather and interpret information from their employees.
+
+      .thumb
+
+        = img "crowdcast/experiments.png"
+
+        :textile
+
+          To more quickly achieve product-market fit, I took several approaches to product experimentation, including rapidly user-testing concepts using paper prototyping and mechanical turking.
+
+
+    %section#development
+      :textile
+
+        I started my career as a front-end website developer after getting a Computer Science degree. I strive to write clean and maintainable code that uses modern practices while supporting popular older web browsers. Being able to write high-quality front-end code is key to my design process and working closely with engineering teams.
+
+      %h3 Ning
+      %h4
+        = link_to "http://ning.com", "http://ning.com"
+        2006–2009
+
+      :textile
+
+        The design team at Ning was responsible for all <abbr>HTML</abbr> and <abbr>CSS</abbr> code. Between 2006 and 2008, the team was just myself and another designer; by 2009, we had grown to 4 people. As a result, a large part of my job was writing and maintaining high-quality code.
+
+      %h5 Network Themes
+      
+      .thumb
+      
+        = img "ning/themes.jpg"
+
+        :textile
+
+          Each network created on Ning has its own theme, consisting of colors, fonts and background images. I worked on the theme-creation page and creating an underlying product design that made sense regardless of the theme applied to it. I also created an <abbr>HTML</abbr> and <abbr>CSS</abbr> framework to support theming across many features, including new and updated features. This was accomplished by separating layout and functionality from typography, colors and graphics, and creating a shared <abbr>HTML</abbr> and <abbr>CSS</abbr> structure for common elements.
+
+      %h3 Adaptive Path
+      %h4
+        = link_to "http://adaptivepath.com", "http://adaptivepath.com"
+        2005
+
+      .thumb
+      
+        = img "adaptivepath/allstate.png"
+
+        :textile
+
+          I worked for Adaptive Path to build a prototype for an <abbr>AJAX</abbr>-enhanced web-based application for Allstate to provide insurance quotes. As the lead web developer, I built <abbr>HTML</abbr>, <abbr>CSS</abbr>, JavaScript and graphics. I worked closely with two developers from Allstate, plus several interaction designers from Adaptive Path and Allstate. I wrote over 100K of object-oriented JavaScript to load <abbr>XML</abbr> and <abbr>HTML</abbr> files, save and retrieve data entered by the user, and add animated transitions and effects.
+
+      %h3 POP
+      %h4
+        = link_to "http://pop.us", "http://pop.us"
+        2002–2005
+
+      :textile
+
+        As a web developer at POP, an interactive agency in Seattle, I developed websites for the Metropolitan Opera, the Seattle Opera, and the Mars Rovers Science Team.
+
+      %h5 Metropolitan Opera
+
+      .thumb
+      
+        = img "pop/met.jpg"
+
+        :textile
+
+          In 2005, the Metropolitan Opera launched its first website update in 10 years, replacing a small static site with a dynamic site that included online ticketing and several hundred pages of information and history.
+
+          As the lead front-end developer, I built an <abbr>HTML</abbr> and <abbr>CSS</abbr> structure and led 2 junior front-end developers to build out the site. I wrote a script to generate the graphic headers from a text file, and made an <abbr>XSL</abbr> transformation that allowed us to manage the 4-level navigational structure of the site from a single file.
+
+    %section#leadership
+    
+      %p In addition to design and front-end development, I’ve also led projects and teams.
+
+      %h3 Ning
+      %h4
+        = link_to "http://ning.com", "http://ning.com"
+        2006–2009
+
+      :textile
+
+        As lead designer, I worked closely with all area and levels of the company, including the <abbr>CEO</abbr>, front- and back-end engineering, product management, and the support team. In addition, I led usability studies to incorporate outside user feedback into our product. From 2006–2009, I was the only constant member of the product team besides the <abbr>CEO</abbr>.
+
+        I recruited and managed several excellent designers and front-end developers. To recruit them, I identified and reviewed resumes and portfolios, did dozens of phone screens, and selected the most promising candidates for on-site interviews with myself and senior team members.
+
+        I also represented Ning at <abbr>SXSW</abbr> in 2008 on the panel discussion “Designing for Freedom” alongside Michael Lopp, Anil Dash, Brent Simmons and Braden Kowitz.
+
+      %h3 POP
+      %h4
+        = link_to "http://pop.us", "http://pop.us"
+        2003–2005
+
+      :textile
+
+        As web development director, I led a team of five full-time web developers. In addition, I interviewed, hired and managed numerous web development contractors. I also initiated and wrote an update to the company’s coding standards for <abbr>HTML</abbr> and <abbr>CSS</abbr> to transition to table-less <abbr>CSS</abbr>-based <abbr>XHTML</abbr> layout.
+
+        As a technical director, I was responsible for the technical success of several clients, including InfoSpace, the Seattle Arts Coalition, Chow Foods Restaurants, and online ticketing systems for the Indianapolis Symphony Orchestra, Houston Symphony, and Houston Ballet. I worked closely with clients, designers, information architects, front- and back-end developers, and producers to meet deadlines and budgets with high-quality releases.
+
+      %h3 RealNetworks
+      %h4
+        = link_to "http://real.com", "http://real.com"
+        1998–2001
+
+      :textile
+
+        As a program manager from 1999–2001, I managed development for the RealSlideshow product. I subsequently managed the My Channels program, supporting over 50 major companies that launched new or updated design for daily multimedia presentations built in <abbr>SMIL</abbr>, including <abbr>ABC</abbr> News, <abbr>CNN</abbr> and <abbr>NPR</abbr>.
+
+        I spoke at numerous conferences representing RealNetworks, including Internet World, Flash Forward, and RealNetworks’ own Real Conference.
+      
