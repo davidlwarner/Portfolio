@@ -10,7 +10,7 @@ p {
 }
 
 a {
-  color: #F2FA67;
+  color: $yellow;
 }
 
 abbr {
@@ -19,13 +19,13 @@ abbr {
 }
 
 // Selection colors (easy to forget)
-@include selection-color($lighter-orange);
+@include selection-color($yellow);
 
 
 body {
   margin: 0 auto;
   color: $dark-gray;
-  background: #F2FA67;
+  background: $yellow;
 }
 
 @import "services/*.png";
@@ -35,12 +35,12 @@ header#site {
   #basic-info {
     position: relative;
     z-index: 2;
-    border-bottom: 1px solid #7B0A04;
-    background: #E62117;
-    background: rgba(#E62117, .8);
+    border-bottom: 1px solid $dark-red;
+    background: $red;
+    background: rgba($red, .8);
     color: white;
     padding: 6px 0;
-    @include box-shadow(rgba(#000, .5) 0 0 5px);
+    @include box-shadow(rgba(black, .5) 0 0 5px);
     h1 {
       font: 72px/72px $title-font;
       text-transform: uppercase;
@@ -87,99 +87,106 @@ header#site {
 }
 
 #main {
-  background: #313D68;
+  background: $dark-blue;
+  @include background(linear-gradient(top, adjust-color($dark-blue, $saturation: -10%, $lightness: +10%) 0,
+                                           $dark-blue 96px,
+                                           $dark-blue 90%,
+                                           adjust-color($dark-blue, $saturation: +10%, $lightness: -10%)));
+  border-top: 1px solid $dark-blue;
+  border-top: 1px solid adjust-color($dark-blue, $saturation: -30%, $lightness: +30%);
+  border-bottom: 1px solid adjust-color($dark-blue, $saturation: -40%, $lightness: +40%);
   color: white;
-}
-
-nav#work {
-  margin-bottom: 24px;
-  ul {
-    list-style: none;
-    margin: 0 auto;
-    @include column(10, auto);
-    @include display-box;
-    @include box-orient(horizontal);
-    @include box-align(stretch);
-    li {
-      @include box-flex(1);
-    }
-  }
-  a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    padding: 12px 0;
-    font: 45px/48px $title-font;
-    text-transform: uppercase;
-    text-rendering: optimizeLegibility;
-    @include text-shadow(rgba(#313D68, 0.5) 1px 1px 0);
-    &.on {
-      cursor: default;
-      color: white;
-    }
-    &:hover {
-      @include text-shadow(rgba(#313D68, 0.5) 1px 1px 0, rgba(white, 0.5) 0 0 5px);
-      &.on {
-        @include text-shadow(rgba(#313D68, 0.5) 1px 1px 0);
+  @include box-shadow(rgba(black, .75) 0 0 5px);
+  nav#work {
+    margin-bottom: 24px;
+    ul {
+      list-style: none;
+      margin: 0 auto;
+      @include column(10, auto);
+      @include display-box;
+      @include box-orient(horizontal);
+      @include box-align(stretch);
+      li {
+        @include box-flex(1);
       }
     }
-  }
-}
-
-#projects {
-  section {
-    @include column(10, true);
-    h3 {
-      margin: 48px 0 0;
-      font: 34px/48px $title-font;
+    a {
+      display: block;
       text-align: center;
-      clear: left;
-      letter-spacing: 1px;
+      text-decoration: none;
+      padding: 12px 0;
+      font: 45px/48px $title-font;
       text-transform: uppercase;
-      &:before, &:after {
-        content: "◆◆◆";
-        margin: 0 8em;
-        font-size: 13px;
-        line-height: 0;
-        letter-spacing: 20px;
+      text-rendering: optimizeLegibility;
+      @include text-shadow(rgba($dark-blue, 0.5) 1px 1px 0);
+      &.on {
+        cursor: default;
+        color: white;
+      }
+      &:hover {
+        @include text-shadow(rgba($dark-blue, 0.5) 1px 1px 0, rgba(white, 0.5) 0 0 5px);
+        &.on {
+          @include text-shadow(rgba($dark-blue, 0.5) 1px 1px 0);
+        }
       }
     }
-    h4 {
-      text-align: center;
-      margin-bottom: 24px;
-      font: 21px/24px $title-font;
-      a {
-        margin-right: 1em;
+  }
+
+  #projects {
+    section {
+      @include column(10, true);
+      h3 {
+        margin: 48px 0 0;
+        font: 34px/48px $title-font;
+        text-align: center;
+        clear: left;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        &:before, &:after {
+          content: "◆◆◆";
+          margin: 0 8em;
+          font-size: 13px;
+          line-height: 0;
+          letter-spacing: 20px;
+        }
       }
-    }
-    h5 {
-      font: 28px/48px $title-font;
-      margin: 12px 0;
-      letter-spacing: -1px;
-      clear: left;
-      text-align: center;
-    }
-    p {
-      @include column(8, true);
-      margin-left: 92px;
-    }
-    .thumb {
-      @include pie-clearfix;
-      min-height: 216px; // 16x9 4-col img height + change
+      h4 {
+        text-align: center;
+        margin-bottom: 24px;
+        font: 21px/24px $title-font;
+        a {
+          margin-right: 1em;
+        }
+      }
+      h5 {
+        font: 28px/48px $title-font;
+        margin: 12px 0;
+        letter-spacing: -1px;
+        clear: left;
+        text-align: center;
+      }
       p {
-        width: auto;
-        margin-left: 368px;
+        @include column(8, true);
+        margin-left: 92px;
       }
-      img {
-        cursor: pointer;
-        @include column(4);
-        display: block;
-        position: absolute;
-        @include transition(all, 1s);
-        &.zoom {
-          z-index: 9999;
-          @include column(10, true);
-          @include box-shadow(rgba(#000, .75) 0 3px 10px);
+      .thumb {
+        @include pie-clearfix;
+        min-height: 216px; // 16x9 4-col img height + change
+        p {
+          width: auto;
+          margin-left: 368px;
+        }
+        img {
+          cursor: pointer;
+          @include column(4);
+          display: block;
+          position: absolute;
+          @include transition(all, 1s);
+          &.zoom {
+            z-index: 9999;
+            @include column(10, true);
+            @include box-shadow(rgba(#000, .75) 0 3px 10px);
+          }
         }
       }
     }
@@ -191,7 +198,7 @@ footer {
   line-height: 48px;
   @include pie-clearfix;
   a {
-    color: #313D68;
+    color: $dark-blue;
   }
   .left {
     float: left;

@@ -1,38 +1,5 @@
 $dark-gray: #222;
-
-/* http://colorschemedesigner.com/#0242iw0w0w0w0 */
-$red-hue: 3;
-$orange-hue: 39;
-$blue-hue: $orange-hue + 180;
-$green-hue: $red-hue + 180;
-/*
-$blue-hue: 220;
-$green-hue: 127;
-*/
-
-
-/* default scheme */
-$red: hsl($red-hue, 100, 50);
-$dark-red: hsl($red-hue, 60, 47);
-$darker-red: hsl($red-hue, 100, 33);
-$light-red: hsl($red-hue, 100, 63);
-$lighter-red: hsl($red-hue, 100, 73);
-
-$orange: hsl($orange-hue, 100, 50);
-$dark-orange: hsl($orange-hue, 60, 47);
-$darker-orange: hsl($orange-hue, 100, 33);
-$light-orange: hsl($orange-hue, 100, 63);
-$lighter-orange: hsl($orange-hue, 100, 73);
-
-$blue: hsl($blue-hue, 82, 37);
-$dark-blue: hsl($blue-hue, 51, 33);
-$darker-blue: hsl($blue-hue, 91, 23);
-$light-blue: hsl($blue-hue, 62, 55);
-$lighter-blue: hsl($blue-hue, 55, 63);
-
-$green: hsl($green-hue, 100, 39);
-$dark-green: hsl($green-hue, 60, 36);
-$darker-green: hsl($green-hue, 100, 25);
-$light-green: hsl($green-hue, 74, 55);
-$lighter-green: hsl($green-hue, 68, 64);
-
+$yellow: #F2FA67;
+$dark-red: #7B0A04;
+$red: #E62117;
+$dark-blue: #313D68;
