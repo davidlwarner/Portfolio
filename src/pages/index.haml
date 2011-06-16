@@ -1,4 +1,6 @@
 %header#site.vcard{ :itemscope => true, :itemtype => "http://schema.org/Person" }
+  #my-photo.container
+    = img "me.jpg", :class => "photo", :itemprop => "image"
   #basic-info
     .container
       %h1.fn{ :itemprop => "name" } David L Warner
@@ -18,7 +20,6 @@
             %abbr.region{ :title => "California", :itemprop => "addressRegion" } CA
 
   #about-me.container
-    = img "me.jpg", :class => "photo", :itemprop => "image"
     #bio
       :textile
 

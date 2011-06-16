@@ -10,7 +10,7 @@ p {
 }
 
 a {
-  color: #EEFE55;
+  color: #F2FA67;
 }
 
 abbr {
@@ -25,7 +25,7 @@ abbr {
 body {
   margin: 0 auto;
   color: $dark-gray;
-  background: #EEFE55;
+  background: #F2FA67;
 }
 
 @import "services/*.png";
@@ -36,6 +36,7 @@ header#site {
     position: relative;
     z-index: 2;
     border-bottom: 1px solid #7B0A04;
+    background: #E62117;
     background: rgba(#E62117, .8);
     color: white;
     padding: 6px 0;
