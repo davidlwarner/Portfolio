@@ -9,14 +9,6 @@
   }
 
   header#site {
-    #my-photo {
-      position: relative;
-      img.photo {
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-    }
     #basic-info {
       h1 {
         @include column(4);
@@ -24,10 +16,22 @@
       }
       h2 {
         float: left;
-        margin-top: 22px;
+        font-size: 34px;
+        margin: 0;
       }
       #contact-info {
-        float: right;
+        float: none;
+      }
+      #services {
+        margin: 0;
+        height: 45px;
+        a {
+          margin-top: 11px;
+        }
+      }
+      .info {
+        line-height: 18px;
+        text-align: left;
       }
     }
     #about-me {
@@ -51,7 +55,7 @@
       }
     }
     #projects {
-      padding-bottom: 240px;
+      padding-bottom: 200px;
       section {
         @include column(8, true);
         p {
@@ -60,13 +64,9 @@
         .thumb {
           img {
             @include column(4);
-/*            position: static;*/
             &.zoom {
               @include column(8, true);
             }
-          }
-          p {
-/*            margin-left: 0;*/
           }
         }
       }

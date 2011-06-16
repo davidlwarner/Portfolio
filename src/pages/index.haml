@@ -1,6 +1,4 @@
 %header#site.vcard{ :itemscope => true, :itemtype => "http://schema.org/Person" }
-  #my-photo.container
-    = img "me.jpg", :class => "photo", :itemprop => "image"
   #basic-info
     .container
       %h1.fn{ :itemprop => "name" } David L Warner
@@ -28,6 +26,9 @@
         I focus on the intersection of clean design with clean code. I'm happiest when I'm collaborating with a strong team to simplify the complex, and to make people’s lives better.
 
         I've worked with Adaptive Path, Allstate, the Metropolitan Opera, Ning, and RealNetworks. In my spare time, I geek out on music.
+
+  #my-photo.container
+    = img "me.jpg", :class => "photo", :itemprop => "image"
 
 #main
   %nav#work
