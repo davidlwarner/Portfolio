@@ -59,8 +59,9 @@
       }
       #my-photo {
         img.photo {
-          right: 0;
-          left: auto;
+          top: auto;
+          bottom: 0;
+          @include column(3, true);
         }
       }
     }
