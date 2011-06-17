@@ -15,33 +15,27 @@
 
   header#site {
     #basic-info {
-      @include pie-clearfix;
       .name-title {
         float: left;
-      }
-      h1 {
-        font-size: 34px;
-        line-height: 34px;
-        width: auto;
-        float: none;
-      }
-      h2 {
-        font-size: 28px;
-        line-height: 34px;
-        margin: 0;
+        text-align: left;
       }
       #contact-info {
         float: right;
+        #services {
+          float: right;
+          a {
+            margin: 0 0 0 10px;
+          }
+        }
+        .info {
+          text-align: right;
+          clear: right;
+        }
       }
     }
     #about-me {
-      background: rgba($yellow, .75);
-      position: relative;
-      z-index: 5;
       #bio {
         @include column(5, true);
-        margin-left: 0;
-        float: none;
       }
     }
     #my-photo {
@@ -62,7 +56,6 @@
       }
     }
     #projects {
-      padding-bottom: 0;
       section {
         @include column(5, true);
         h3 {
@@ -72,16 +65,10 @@
         }
         p {
           @include column(5, true);
-          margin-left: 0;
         }
         .thumb {
-          p {
-            margin-left: 0;
-          }
           img {
             @include column(5, true);
-            margin: 0 0 24px;
-            position: static;
             &.zoom {
               @include column(5, true);
             }
