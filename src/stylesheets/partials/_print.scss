@@ -1,0 +1,63 @@
+@media print {
+	* {
+		background: transparent !important;
+		color: black !important; /* The woes of CSS color in print typography: sanbeiji.com/archives/953 */
+		text-shadow: none !important;
+		border: none !important;
+	}
+	a, a:visited {
+		color: #333 !important;
+		text-decoration: underline;
+	}
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+	img {
+		page-break-inside: avoid;
+	}
+	@page {
+		margin: 0.5cm;
+	}
+	p, h2, h3 {
+		orphans: 3;
+		widows: 3;
+	}
+	h2, h3, h4, h5 {
+		page-break-after: avoid;
+	}
+
+  #services a {
+    width: auto !important;
+    height: auto !important;
+    text-indent: 0 !important;
+/*    display: block;*/
+/*    float: right;*/
+/*    margin-left: 10px;*/
+    background: none !important;
+    letter-spacing: 0 !important;
+  }
+  
+  #bio {
+    margin-left: 92px !important;
+    width: 712px !important;
+  }
+
+  #my-photo {
+    display: none !important;
+  }
+
+  nav#work {
+    display: none !important;
+  }
+  #projects {
+    section {
+      display: block !important;
+       h2 {
+        display: block !important;
+        font: 45px/45px $title-font;
+        text-rendering: optimizeLegibility;
+        letter-spacing: -1px;
+      }
+    }
+  }
+}
