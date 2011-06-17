@@ -5,17 +5,6 @@ body {
 }
 
 @font-face {
-    font-family: 'BonvenoCFLight';
-    src: url('/fonts/BonvenoCF-Light-webfont.eot');
-    src: url('/fonts/BonvenoCF-Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/BonvenoCF-Light-webfont.woff') format('woff'),
-         url('/fonts/BonvenoCF-Light-webfont.ttf') format('truetype'),
-         url('/fonts/BonvenoCF-Light-webfont.svg#BonvenoCFLight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
   font-family: 'LeagueGothicRegular';
   src: url('/fonts/LeagueGothic/League_Gothic-webfont.eot');
   src: url('/fonts/LeagueGothic/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
@@ -26,7 +15,7 @@ body {
   font-style: normal;
 }
 
-$title-font: 'LeagueGothicRegular', GillSans, Calibri, Trebuchet, sans-serif;
+$title-font: 'LeagueGothicRegular', Helvetica, 'Helvetica Neue', Arial, sans-serif;
 
 .small {
 	font-size: 13px;
