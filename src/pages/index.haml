@@ -3,14 +3,14 @@
     .container
       .name-title
         %h1.fn{ :itemprop => "name" } David L Warner
-        %h2.role UX Designer & Developer
+        %h2.title UX Designer & Developer
 
       #contact-info
         %p#services
           %a.services-linkedin.url{ :href => "http://www.linkedin.com/in/davidlwarner", :rel => "me" } LinkedIn
           %a.services-twitter.url{ :href => "http://twitter.com/davidlwarner", :rel => "me" } Twitter
           %a.services-facebook.url{ :href => "http://www.facebook.com/davidw", :rel => "me" } Facebook
-          %a.services-email.email{ :href => "mailto:david@davidlwarner.com", :itemprop => "email" } david@davidlwarner.com
+          %a.services-email.email{ :href => "mailto:david@davidlwarner.com", :itemprop => "email", :rel => "author" } david@davidlwarner.com
         %p.info
           %span.tel{ :itemprop => "telephone" } 415-609-7490
           %span.adr.address{ :itemprop => "address", :itemscope => true, :itemtype => "http://schema.org/PostalAddress" }
