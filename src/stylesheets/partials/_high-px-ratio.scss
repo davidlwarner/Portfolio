@@ -3,6 +3,13 @@
    device-pixel-ratio of 2+, such as iPhone 4.  */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-  #{$less-grid-element} {
+  $retina-icons: sprite-map("services-48/*.png");
+
+  .services-email,
+  .services-facebook,
+  .services-linkedin,
+  .services-twitter {
+    background-image: sprite-url($retina-icons);
+    background-size: 100% auto;
   }
 }
