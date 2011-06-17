@@ -43,7 +43,7 @@ header#site {
 
 #main {
   position: relative;
-  z-index: 2;
+  z-index: 6;
   nav#work {
     ul {
       @include column(10, auto);

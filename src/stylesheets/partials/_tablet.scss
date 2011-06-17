@@ -47,8 +47,6 @@
   }
 
   #main {
-    position: relative;
-    z-index: 2;
     nav#work {
       ul {
         @include column(8, auto);

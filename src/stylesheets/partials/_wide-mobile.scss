@@ -6,16 +6,86 @@
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   #{$less-grid-element} {
     @include grid(5);
-    
-    header, #main {
-      @include column(5);
-      float: none;
+  }
+  
+  body {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  header#site {
+    #basic-info {
+      @include pie-clearfix;
+      .name-title {
+        float: left;
+      }
+      h1 {
+        font-size: 34px;
+        line-height: 34px;
+        width: auto;
+        float: none;
+      }
+      h2 {
+        font-size: 28px;
+        line-height: 34px;
+        margin: 0;
+      }
+      #contact-info {
+        float: right;
+      }
     }
-    
+    #about-me {
+      background: rgba($yellow, .75);
+      position: relative;
+      z-index: 5;
+      #bio {
+        @include column(5, true);
+        margin-left: 0;
+        float: none;
+      }
+    }
+    #my-photo {
+      img.photo {
+        right: 0;
+        left: auto;
+      }
+    }
+  }
+
+  #main {
+    nav#work {
+      ul {
+        @include column(5, auto);
+      }
+      a {
+        font-size: 28px;
+      }
+    }
     #projects {
+      padding-bottom: 0;
       section {
-        .thumbs, .thumbs img {
+        @include column(5, true);
+        h3 {
+          &:before, &:after {
+            margin: 0 2em;
+          }
+        }
+        p {
           @include column(5, true);
+          margin-left: 0;
+        }
+        .thumb {
+          p {
+            margin-left: 0;
+          }
+          img {
+            @include column(5, true);
+            margin: 0 0 24px;
+            position: static;
+            &.zoom {
+              @include column(5, true);
+            }
+          }
         }
       }
     }
