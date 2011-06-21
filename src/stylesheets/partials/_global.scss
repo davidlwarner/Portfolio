@@ -24,7 +24,7 @@ abbr {
 }
 
 // Selection colors (easy to forget)
-@include selection-color($yellow);
+@include selection-color($dark-red);
 
 
 body {
@@ -85,6 +85,11 @@ header#site {
       abbr {
         letter-spacing: -2px;
       }
+    }
+  }
+  #about-me {
+    a {
+      color: $dark-blue;
     }
   }
 }
